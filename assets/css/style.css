@@ -105,6 +105,12 @@ input::placeholder{
     transition: transform 150ms;
     transform: scale(1.03);
  }
+
+ .btn[disapled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+ }
  
  
 
