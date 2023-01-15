@@ -19,20 +19,20 @@
 <body>
     <!--This is home page and it for the  user to fill a form; the user name and password before he or she will be
          allow to play the quiz-->
-     <div class="container">
-        <!-- flex is used for responsiveness-->
-        <div id="home" class=" flex-colunm flex-center">
-            <img src="assets/images/logo.svg" alt="funTime-quizlogo" style="width: 20%; height: 20%;">
-            <h1> Enter your name to play</h1>
-            <form class="end-form-container" action="play.html" method="POST">
-                <input type="text" name="" id="username" placeholder="Enter your name" required>
-                <input type="text" name="" id="password" placeholder="Enter your password" required>
-                <!-- this to validate the form.-->
-                <input type="submit" name="" value="login" onclick="validate()">
-            </form>
+         <div class="container">
+            <div id="home" class=" flex-colunm flex-center">
+                <img src="/assets/images/logo.svg" alt="logo for FunTime Quiz" style="width: 20%; height: 20%;">
+                <h2> Enter Your Name to Play</h2>
+                <form class="form-container" action="play.html" method="POST">
+                    
+                    <input type="text" name="" id="username" placeholder="Enter your name" required>
+                    <input type="text" name="" id="password" placeholder="Enter your password" required>
+                    <input type="submit" name="" value="submit" onclick="validate()">
+                </form>
+            </div>
+    
         </div>
-    </div>
-    <script  src="pass.js"></script>
+        <script  src="pass.js"></script>
     <script></script>
 </body>
 </html>
