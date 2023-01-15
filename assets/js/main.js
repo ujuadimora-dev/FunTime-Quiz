@@ -75,7 +75,7 @@ const questions = [
         },
       ]
 totalQuestionsSpan.innerHTML = questions.length
-
+// this is incremment the options
 function load(){
     questionNumberSpan.innerHTML = index + 1
     question.innerHTML = questions[currentIndex].q;
@@ -86,7 +86,7 @@ function load(){
     index++
 }
 
-//Check if selected answer is correct or wrong
+//Check if selected answer is correct or wrong and incremnet the score if the answere is correct
 function check(element){
     if(element.id == questions[currentIndex].answer){
         element.className="correct"
