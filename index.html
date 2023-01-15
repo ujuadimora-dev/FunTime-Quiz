@@ -8,7 +8,7 @@
   <meta name="keywords"
     content="Educative, having fun, nature, science, not easy, for school,  Germany, Europe">
 
-    
+
   <title>FunTime-quiz</title>
   <!-- google font   used-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,17 +19,20 @@
 <body>
     <!--This is home page and it for the  user to fill a form; the user name and password before he or she will be
          allow to play the quiz-->
-    <div> containter 
-        <div>
-            <h1> some txt</h1>
-            <form >
-                 input username
-                input password
-                
+     <div class="container">
+        <!-- flex is used for responsiveness-->
+        <div id="home" class=" flex-colunm flex-center">
+            <h1> Are you ready</h1>
+            <form class="end-form-container" action="play.html" method="POST">
+                <h2 id="end-text">Enter your Name to play</h2>
+                <input type="text" name="" id="username" placeholder="Enter your name" required>
+                <input type="text" name="" id="password" placeholder="Enter your password" required>
+                <!-- this to validate the form.-->
+                <input type="submit" name="" value="login" onclick="validate()">
             </form>
         </div>
-
     </div>
+    <script  src="pass.js"></script>
     <script></script>
 </body>
 </html>
