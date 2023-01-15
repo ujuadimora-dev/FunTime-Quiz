@@ -2,7 +2,7 @@
     background-color: rgb(29, 26, 26);
    
 }
-
+/*-- the remove the original style from markup-*/
 *{
  margin: 0;
  padding: 0;
@@ -14,6 +14,7 @@
  box-sizing: border-box;
  font-size: 62.5%;
 }
+/*-- General: reuse style-*/
 h1{
    font-size: 5.4rem;
    color: #fff;
