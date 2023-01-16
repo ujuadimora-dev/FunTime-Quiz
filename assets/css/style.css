@@ -26,14 +26,38 @@ h2{
    margin-bottom: 4rem;
    color: #fff
 }
-p{
+/*p{
     font-size: 2.2rem;
     color: #fff;
    margin-left: 3%;
    margin-right: 3%;
    line-height: 4rem;
    margin-bottom: 4rem;
-}
+}*/
+
+/* the animation is credit to https://techblog.geekyants.com/some-of-the-most-popular-css-text-animations*/
+p  {
+   margin: 1rem auto;
+   font-size: 2.2rem;
+    margin-left: 3%;
+   margin-right: 3%;
+   line-height: 4rem;
+   margin-bottom: 4rem;
+   animation: neon 1s ease infinite;
+  }
+  @keyframes neon {
+      0%,
+      100% {
+          text-shadow: 0 0 10px #fff4ffa8, 0 0 20px #e7e2e7a8, 0 0 20px #f0f0f0a8, 0 0 20px #ecececa8, 0 0 2px #b1afaa, 2px 2px 2px #806914;
+          color: #f5efcb;
+      }
+      50% {
+          text-shadow: 0 0 2px #348a1a, 0 0 5px #119e24, 0 0 5px #1fa831, 0 0 5px #0da347, 0 0 2px #0b8024, 4px 4px 2px #12a325;
+          color: #a0edaa;
+      }
+  }
+ 
+ 
 
 .container{
    width: 80vw;
@@ -91,18 +115,18 @@ input::placeholder{
 /*-the play styling-*/
 
 .btn{
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     padding: 2rem 0;
     width: 30rem;
     text-align: center;
     margin-bottom: 1rem;
     color: rgb(231, 231, 231);
-    background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgb(9, 255, 0)100%);
+    background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgba(76, 223, 71, 0.829)100%);
     border-radius: 4px;  
  }
  .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 244, 79, 0.6);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(52, 192, 94, 0.747);
     transition: transform 150ms;
     transform: scale(1.03);
  }
