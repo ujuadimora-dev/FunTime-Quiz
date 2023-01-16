@@ -186,8 +186,9 @@ function quizOver(){
     totalQuestionsSpan2.innerHTML = questions.length
     percentageSpan.innerHTML=Math.round((score/questions.length)*100) + "%"
     
-   let message= [ 'great' , ' need to do better']
-   let images = ['images/OFeG.gif','images/low-score.gif']
+    // message for the  low score and high scores
+   let message= [ 'Great Job' , ' You really need to do better']
+   let images = ['assets/images/great.gif','assets/images/low-score.gif']
    //images = document.querySelector(',images')
    //if( images.style) {
        //images.height = 200;
