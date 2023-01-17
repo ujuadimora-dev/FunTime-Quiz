@@ -8,14 +8,15 @@
 .quiz-container{
     max-width: 700px;
     min-height: 500px;
-    background-color: rgb(14, 10, 10);
+    background-color: rgb(54, 50, 50);
     margin: 30px auto;
     border-radius: 8px;
     padding: 30px;
 }
 
 .question-number h3 {
-    color:#009788;
+    color:#33ca0d;
+    font-size: 20px;
     border-bottom: 1px solid #ccc;
     margin: 0;
     padding-bottom: 10px;
@@ -47,7 +48,7 @@
 
 .options div.correct{
     z-index: 1;
-    color: white;
+    color: rgb(213, 218, 214);
 }
 
 .options div.correct::before {
@@ -92,9 +93,9 @@
     animation-fill-mode: forwards;
 }
 
-.button .btn{
+/*.button .btn{
     padding: 10px 30px;
-    background-color: #009688;
+    background-color: #40c91e;
     font-size: 18px;
     color: white;
     border:none;
@@ -102,6 +103,20 @@
     border-radius: 5px;
     display: inline-block;
     margin:10px 0;
+}*/
+
+.btn1{
+
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 10rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border:none;
+    color: rgb(231, 231, 231);
+    background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgba(76, 223, 71, 0.829)100%);
+    border-radius: 4px;  
+    cursor: pointer;
 }
 
 .answers-tracker div{
@@ -136,7 +151,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(48, 47, 47);
     z-index: 10;
     display:none;
     align-items: center;
@@ -147,8 +162,7 @@
 }
 
 .quiz-over .box{
-    background-color: #1aac32;
-    padding:30px;
+    background-color: rgb(32, 28, 28);
     border-radius: 10px;
     text-align: center;
     flex-basis: 700px;
@@ -158,16 +172,19 @@
 }
 
 .quiz-over .box  h1{
-    font-size: 36px;
+    font-size: 30px;
     margin:0 0 20px
 }
 
 .quiz-over .box button{
     padding: 15px 50px;
     border:none;
-    background-color: #f7b53c;
+    background-color: #1a9940;
     border-radius: 5px;
     font-size: 16px;
     margin:15px 0 20px;
-    color: white;
+    color: rgb(231, 231, 231);
+    background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgba(76, 223, 71, 0.829)100%);
+    cursor: pointer;
+
 }

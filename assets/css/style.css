@@ -1,5 +1,5 @@
 :root{
-    background-color: rgb(29, 26, 26);
+    background-color: rgb(32, 30, 30);
    
 }
 /*-- the remove the original style from markup-*/
@@ -131,7 +131,7 @@ input::placeholder{
     transform: scale(1.03);
  }
 
- .btn[disapled]:hover{
+ .btn[disabled]:hover{
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
