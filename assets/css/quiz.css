@@ -107,17 +107,23 @@
 
 .btn1{
 
-    font-size: 2.4rem;
-    padding: 2rem 0;
-    width: 10rem;
-    text-align: center;
-    margin-bottom: 1rem;
+    padding: 15px 50px;
     border:none;
+    background-color: #1a9940;
+    border-radius: 5px;
+    font-size: 16px;
+    margin:15px 0 20px;
     color: rgb(231, 231, 231);
     background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgba(76, 223, 71, 0.829)100%);
-    border-radius: 4px;  
     cursor: pointer;
 }
+
+.btn1:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(52, 192, 94, 0.747);
+    transition: transform 150ms;
+    transform: scale(1.03);
+ }
 
 .answers-tracker div{
     height: 40px;
@@ -175,7 +181,7 @@
     font-size: 30px;
     margin:0 0 20px
 }
-
+/* 
 .quiz-over .box button{
     padding: 15px 50px;
     border:none;
@@ -187,4 +193,4 @@
     background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgba(76, 223, 71, 0.829)100%);
     cursor: pointer;
 
-}
+} */

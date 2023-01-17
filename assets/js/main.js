@@ -178,6 +178,7 @@ function answersTracker(){
 function updateAnswersTracker(newClass){
     answersTrackerContainer.children[index -1].classList.add(newClass)
 }
+console.log("Gathering results...");
 
 //Displays the quiz-over page if quiz is over
 function quizOver(){
@@ -196,7 +197,7 @@ function quizOver(){
    //}
    
    let range;
-   console.log("Gathering results...");
+  
    
     if(score > 6 )  {
         range = 0;   
