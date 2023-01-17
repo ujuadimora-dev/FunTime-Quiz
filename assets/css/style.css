@@ -62,7 +62,7 @@ p  {
 .container{
    width: 80vw;
    height: 80vh;
-   background-color: rgb(26, 23, 23);
+   background-color: rgb(54, 50, 50);
    /*background-color: orange;*/
    display: flex;
    justify-content: center;

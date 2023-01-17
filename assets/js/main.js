@@ -32,46 +32,46 @@ const questions = [
             answer:3
         },
         {
-            q:'What type of creature is a Dog Face',
+            q:'What type of creature is a Dog Face?',
             options:['cat', 'Butterfly', 'lizard', 'goat'],
-            answer:2
+            answer:1
         },
     
         {
-            q:'Which of these countries is dead sea located?',
-            options:['between Israel and Syria', 'between Israel and Jordan', 'between Japan and  China', 'between Nigeria and chad'],
-            answer:1
+            q:'During which month of the year does the Summer Solstice occur in the Northern Hemisphere?',
+            options:['June', 'July', 'May', 'September'],
+            answer:0
         },
         {
-            q:'How many teeth does an adult cat normally have?',
-            options:['40', '45', '24', '30'],
-            answer:3
-        },
-        {
-            q:'What type of creature is a Dog Face',
-            options:['cat', 'Butterfly', 'lizard', 'goat'],
+            q:'How many toes does a cat have on each front paw?',
+            options:['two', 'Ten', 'Five', 'six'],
             answer:2
         },
         {
-            q:'Which of these countries is dead sea located?',
-            options:['between Israel and Syria', 'between Israel and Jordan', 'between Japan and  China', 'between Nigeria and chad'],
+            q:'What is the Largest Planet in The Universe',
+            options:['Earth', 'Jupiter', 'Mars', 'Mercury'],
             answer:1
         },
         {
-            q:'How many teeth does an adult cat normally have?',
-            options:['40', '45', '24', '30'],
+            q:'How tall is mount Everest?',
+            options:['11,848.86 m (30,031.7 ft) ', '20,654.7ft', '4,987,78ft',  '8,848.86 m (29,031.7 ft) ',],
             answer:3
         },
         {
-            q:'What type of creature is a Dog Face',
-            options:['cat', 'Butterfly', 'lizard', 'goat'],
+            q: 'Which of  these is the  oldest tree in the world?',
+            options:['Giant sequoia(Sequoiadendron giganteum)' , 'Coast live oak (Quercus agrifolia)', 'The Great Basin Bristlecone Pine (Pinus longaeva)', 'Limber pine'],
             answer:2
+        },
+        {
+            q:'Which is the fastest moving land snake in the world?',
+            options:['Cat-eyed snake', 'Black mamba', 'hoop sanke', 'Zebra spitting cobra?'],
+            answer:1
         },
     
         {
-            q:'What type of creature is a Dog Face',
-            options:['cat', 'Butterfly', 'lizard', 'goat'],
-            answer:2
+            q:'What is the heaviest insect?',
+            options:['fly', 'Bettle', 'cocoroach', 'mosquitoes'],
+            answer:1
         },
       ]
 totalQuestionsSpan.innerHTML = questions.length
