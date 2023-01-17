@@ -1,6 +1,6 @@
-function validate(){  
-    let name = document.getElementById('username').value;  
-    let password = document.getElementById('password').value;  
+function validate() {  
+    let name=document.getElementById('username').value;  
+    let password=document.getElementById('password').value;  
       
     if (name==null || name==""){  
       alert("Name can't be blank");  
@@ -11,5 +11,5 @@ function validate(){
       return false;  
       } 
       else
-       alert('successful') 
+       alert('successful');
     } 

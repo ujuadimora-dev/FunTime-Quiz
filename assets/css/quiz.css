@@ -7,7 +7,7 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-.quiz-container{
+.container-quiz{
     max-width: 700px;
     min-height: 500px;
     background-color: rgb(54, 50, 50);
@@ -16,7 +16,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     padding: 30px;
 }
 
-.question-number h3 {
+.question-option h3 {
     color:#33ca0d;
     font-size: 20px;
     border-bottom: 1px solid #ccc;
@@ -176,7 +176,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     flex-basis: 700px;
     max-width: 700px;
     color: white;
-    box-shadow: #009688;
+   /*  box-shadow: #009688;*/
 }
 
 .quiz-over .box  h1{

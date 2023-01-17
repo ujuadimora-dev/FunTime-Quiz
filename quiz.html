@@ -12,13 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
     <title>The Quiz</title>
 </head>
 <!--Here the the main conatiner for the quiz-->
-<div class="quiz-container">
-    <div class="question-number">
+<div class="container-quiz">
+    <div class="question-option">
         <h3>Question <span class="question-num-value"></span> of
             <span class="total-questions"></span>
         </h3>
@@ -44,9 +43,9 @@
 <!--this is for the container that hold the users score and images for high score and low score-->
 <div class="quiz-over">
     <div class="box">
-        <h1 id="message"></h1> <br />
-        <img class="images" />
-        <h1> <br />
+        <h1 id="message">great or Poor result</h1> <br>
+        <img src="/images" alt="good and poor images" class="images" />
+        <h1> <br>
             You got <span class="correct-answers"></span> out of
             <span class="total-questions2"></span> answers correct.
             That is <span class="percentage"></span>
@@ -54,18 +53,7 @@
         <button type="button" onclick="tryAgain()" class="btn1">Play Again! </button>
     </div>
 </div>
- </div>
-
- <footer>
-    <div class="social-container">
-        <ul class="social-icons">
-            follow us at:
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
-        </ul>
- </footer>
-
-</body>
 <script src="assets/js/main.js"></script>
+</body>
+
+</html>
