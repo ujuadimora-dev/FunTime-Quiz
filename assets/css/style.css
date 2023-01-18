@@ -197,4 +197,58 @@ input::placeholder{
     transform: none;
  }
  
+ /*footer styling 
+
+ .footer-nav {
+   column-count: 4;
+   column-gap: 1px;
  
+   
+ }
+ 
+ .footer-nav a {
+   
+   gap: 1px;
+   color: rgb(24, 204, 48);
+   text-decoration: none;
+ }
+ */
+
+ .social-icons{
+   align-content: center;
+   margin-left: 38%;
+
+ }
+
+ .social-icons li {
+   margin: 2px 2px;
+      display: inline-block;
+      align-items: center;
+      font-size: 20px;
+      padding: 5px 5px;
+      line-height: 2px;
+      color: #fff;
+      border :1px solid #12a325;
+      border-radius: 50%;
+      transition: .5s;
+
+}
+.social-icons li a:hover {
+   color: #fff;
+   border: 1px solid #119e24;
+
+}
+   
+
+   
+
+   
+
+
+   .fa {
+       color: green;
+       transform: transition(all, 0.2s, ease-in);
+       
+   }
+         
+   
