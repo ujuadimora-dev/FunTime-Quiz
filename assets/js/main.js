@@ -219,7 +219,7 @@ function quizOver(){
     /**
      * This message for the  low score and high scores
      */
-   let message= [ 'Great Job' , ' You really need to do better']
+   let message= [ 'Great Job!' , ' You really need to do better!']
    let images = ['assets/images/great-job.gif','assets/images/poor-score.gif']
    
    let range;
