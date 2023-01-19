@@ -57,8 +57,8 @@ p  {
  
  /* navigation */
  .container{
-   width: 100vw;
-   height: 100vh;
+   width: 80vw;
+   height: 80vh;
    background-color: rgb(54, 50, 50);
    /*background-color: orange;*/
    display: flex;
@@ -90,8 +90,8 @@ p  {
  
  .nav-li {
    display: flex;
-   font-size: 3rem;
-   margin-top: -12rem;
+   font-size: 5rem;
+   margin-top: -10rem;
    margin-right: 8rem;
    gap: 3rem;
    /*gap: clamp(1rem, 5vw, 3rem);*/
@@ -141,7 +141,7 @@ p  {
 
 /*-the form styling-*/
 .form-container{
-   width: 100%;
+   width: 80%;
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -216,7 +216,9 @@ input::placeholder{
 
  .social-icons{
    align-content: center;
-   margin-left: 45%;
+   margin-left: 38%;
+   padding: 2% 2%;
+   margin-bottom: 2%;
 
  }
 
