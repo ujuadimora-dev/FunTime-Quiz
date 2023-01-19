@@ -8,6 +8,7 @@
     <meta name="description" content="FunTime-Quiz is a website  for learning and having fun Germany Eurpe">
     <meta name="keywords" content="Educative, having fun, nature, science, not easy, for school,  Germany, Europe">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/quiz.css">
 
     <title>FunTime-quiz</title>
     <!-- google font   used-->
@@ -39,37 +40,44 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
-            <div id="home" class=" flex-colunm flex-center">
-                <h2> Enter Your Name to Play</h2>
-                <form class="form-container" action="play.html" method="get">
-                    <input type="text" name="name" id="username" placeholder="Enter your name" required>
-                    <input type="text" name="name" id="password" placeholder="Enter your password" required>
-                    <input type="submit" name="name" value="submit" onclick="validate()" class="btn">submit>
-                </form>
-            </div>
 
-            <footer class="footer-nav">
-                <div class="even-columns">
-                    <div>
+                <div id="home" class=" flex-colunm flex-center">
+                    <h2> Enter Your Name to Play</h2>
+                    
+                    <form class="form-container" name="myForm" action="play.html" onsubmit="return validateForm()" method="get">
+                        <input type="text" name="name" id="username" placeholder="Enter your name" required>
+                        <input type="submit" name="name" value="submit" onclick="validate()" class="btn">
+                        
+                        </form>
+                   
+                </div>
+
+                <footer class="footer-nav">
+                    <div class="even-columns">
+
                         <ul class="social-icons">
                             <li> <a href="https://www.facebook.com/" target="_blank" rel="noopener"
                                     aria-label="Visit our facebook page (opens in a new tab)"
-                                    class="fa fa-facebook"></a></li>
+                                    class="fa fa-facebook"></a>
+                            </li>
                             <li><a href="https://twitter.com/" target="_blank" rel="noopener"
                                     aria-label="Visit our Twitter page (opens in a new tab)" class="fa fa-twitter"></a>
                             </li>
                             <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"
                                     aria-label="Visit our linkedin page (opens in a new tab)"
-                                    class="fa fa-linkedin"></a></li>
+                                    class="fa fa-linkedin"></a>
+                            </li>
                             <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
                                     aria-label="Visit our youtube page (opens in a new tab)" class="fa fa-youtube"></a>
                             </li>
                         </ul>
-                    </div>
-            </footer>
 
-    </div>
+                    </div>
+                </footer>
+            </div>
+      </div>
+  </div>
+    
     <script src="https://kit.fontawesome.com/72e64da51c.js" crossorigin="anonymous"></script>
     <script src="assets/js/pass.js"></script>
     <script></script>

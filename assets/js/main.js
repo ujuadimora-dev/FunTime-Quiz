@@ -178,7 +178,7 @@ function answersTracker(){
 function updateAnswersTracker(newClass){
     answersTrackerContainer.children[index -1].classList.add(newClass)
 }
-console.log("Gathering results...");
+
 
 //Displays the quiz-over page if quiz is over
 function quizOver(){
@@ -215,4 +215,7 @@ document.querySelector(".images").width = 300
 
 function tryAgain(){
     window.location.reload();
+}
+function goHome(){
+    window.location.href="../index.html"
 }

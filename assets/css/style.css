@@ -90,7 +90,7 @@ p  {
  
  .nav-li {
    display: flex;
-   font-size: 4rem;
+   font-size: 3rem;
    margin-top: -12rem;
    margin-right: 8rem;
    gap: 3rem;
@@ -102,15 +102,15 @@ p  {
  
  .nav-li a {
    text-decoration: none;
-  
-   color: #fff;
+  color: #fff;
    
  }
- 
- .nav-list a:hover,
- .nav-list a:focus {
-   color: brown;
+ .nav-li a:hover{
+   color: rgb(16, 124, 43)
  }
+
+ 
+
  
  
 /* for login
@@ -216,7 +216,7 @@ input::placeholder{
 
  .social-icons{
    align-content: center;
-   margin-left: 38%;
+   margin-left: 45%;
 
  }
 

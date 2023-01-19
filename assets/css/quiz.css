@@ -196,38 +196,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     cursor: pointer;
 
 } */
-.social-container {
-    width: 400px;
-    margin: 40vh auto;
-    text-align: center;
-}
 
-.social-icons {
-    padding: 0;
-    list-style: none;
-    margin: 1em;
-}
-
-li {
-        display: inline-block;
-        margin: 0.15em;
-        position: relative;
-        font-size: 1.2em;
-
-}
-
-i {
-        color: #fff;
-        position: absolute;
-        top: 21px;
-        left: 21px;
-        transition: all 4ms ease-out;
-}
-
-    a {
-        display: inline-block;
-      
-        
-        }
         
        
