@@ -50,7 +50,7 @@ p  {
           color: #f5efcb;
       }
       50% {
-          text-shadow: 0 0 2px #348a1a, 0 0 5px #119e24, 0 0 5px #1fa831, 0 0 5px #0da347, 0 0 2px #0b8024, 4px 4px 2px #12a325;
+          text-shadow: 0 0 2px  rgb(6, 126, 34), 0 0 5px  rgb(6, 126, 34), 0 0 5px  rgb(6, 126, 34), 0 0 5px rgb(6, 126, 34), 0 0 2px  rgb(6, 126, 34);
           color: #a0edaa;
       }
   }
@@ -84,14 +84,14 @@ p  {
  
  
  #logo{
-   margin-bottom: 15rem;
+   margin-bottom: 10rem;
  }
  
  
  .nav-li {
    display: flex;
    font-size: 5rem;
-   margin-top: -10rem;
+   margin-top: -7rem;
    margin-right: 8rem;
    gap: 3rem;
    /*gap: clamp(1rem, 5vw, 3rem);*/
@@ -106,9 +106,12 @@ p  {
    
  }
  .nav-li a:hover{
-   color: rgb(16, 124, 43)
- }
-
+   color:  rgb(6, 126, 34);
+}
+.nav-li  a.active {
+   text-decoration-line: overline;
+   color:  rgb(6, 126, 34)
+}
  
 
  
@@ -169,22 +172,24 @@ input::placeholder{
    text-align: center;
 }
 
+span{
+   color: rgb(6, 126, 34);
+}
 /*-the play styling-*/
 
 .btn{
    padding: 15px 50px;
-   border:none;
-   background-color: #1a9940;
+   border:none rgb(6, 126, 34);
    border-radius: 5px;
    font-size: 16px;
    margin:15px 0 20px;
    color: rgb(231, 231, 231);
-   background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgba(76, 223, 71, 0.829)100%);
+   background: linear-gradient(90deg, rgb(rgb(6, 126, 34))0%, rgba(rgb(6, 126, 34), 0.829)100%);
    cursor: pointer;
 }
  .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(52, 192, 94, 0.747);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(rgb(6, 126, 34), 0.747);
     transition: transform 150ms;
     transform: scale(1.03);
    

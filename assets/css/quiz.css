@@ -7,6 +7,38 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
+#primary-nav{
+    display: flex;
+    padding-top: -1rem;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+    margin-left:80%;
+}
+
+
+  
+#primary-nav li {
+    float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+    
+   }
+  
+  #primary-nav li  a {
+    text-decoration: none;
+   color: #fff;
+   
+    
+  }
+  #primary-nav li  a:hover{
+    color: rgb(6, 126, 34)
+  }
+
+ 
 .container-quiz{
     max-width: 700px;
     min-height: 500px;
@@ -17,7 +49,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .question-option h3 {
-    color:#33ca0d;
+    color: rgb(6, 126, 34);
     font-size: 20px;
     border-bottom: 1px solid #ccc;
     margin: 0;
@@ -60,7 +92,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     top: 0;
     width: 100%;
     height: 100%;
-    background-color:green;
+    background-color: rgb(6, 126, 34);
     z-index: -1;
 
     animation: animateBackground 1s ease;
@@ -111,18 +143,18 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
     padding: 15px 50px;
     border:none;
-    background-color: #1a9940;
+    background-color: rgb(6, 126, 34);
     border-radius: 5px;
     font-size: 16px;
     margin:15px 0 20px;
     color: rgb(231, 231, 231);
-    background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgba(76, 223, 71, 0.829)100%);
+    background: linear-gradient(90deg, rgb( rgb(6, 126, 34))0%, rgba( rgb(6, 126, 34) 0.829)100%);
     cursor: pointer;
 }
 
 .btn1:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(52, 192, 94, 0.747);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba( rgb(6, 126, 34) 0.747);
     transition: transform 150ms;
     transform: scale(1.03);
  }
@@ -138,7 +170,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 
 .answers-tracker div.correct{
-    background-color: green;
+    background-color:  rgb(6, 126, 34);
     background-image:url('../images/good-grage.png');
     background-position: center;
     background-repeat: no-repeat;
