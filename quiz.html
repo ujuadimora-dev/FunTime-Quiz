@@ -15,71 +15,64 @@
 
     <title>The Quiz</title>
 </head>
-<div class="container">
-    <header class="primary-header">
-        <div class="container-header">
-            <div class="nav-wrapper">
-                <!--Here is the markup for the mobile toggling and aria here is because of the screen reader-->
-
-                <nav class="primary-navigation">
-                    <ul aria-label="Primary" role="li" class="nav-li" id="primary-navigation">
-                        <li><a class="active" href="index.html" style="font-size: 2rem;">Home</a></li>
-                        <li><a href="contact.html" style="font-size: 2rem;">Contact</a></li>
-                    </ul>
-                </nav>
+<body>
+    <div class="container">
+        <header class="primary-header">
+            <div class="container-header">
+                <div class="nav-wrapper">
+                    <!--Here is the markup for the mobile toggling and aria here is because of the screen reader-->
+                    <nav class="primary-navigation">
+                        <ul aria-label="Primary" role="li" class="nav-li" id="primary-navigation">
+                            <li><a class="active" href="index.html" style="font-size: 2rem;">Home</a></li>
+                            <li><a href="contact.html" style="font-size: 2rem;">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--Here the the main conatiner for the quiz-->
+            <div class="container-quiz1">
+                <div class="question-option">
+                    <h3>Question <span class="question-num-value"></span> of
+                        <span class="total-questions"></span>
+                    </h3>
+                </div>
+                <div class="question">
+                    What do you know about Nature and Science?
+                </div>
+                <!--Here the the conatiner for the  quiz options-->
+                <div class="options">
+                    <div id="0" class="option1" onclick="check(this)"></div>
+                    <div id="1" class="option2" onclick="check(this)"></div>
+                    <div id="2" class="option3" onclick="check(this)"></div>
+                    <div id="3" class="option4" onclick="check(this)"></div>
+                </div>
+                <div>
+                    <button type="button" onclick="next()" class="btn1">Next</button>
+                </div>
+                <!--the markup for the result-->
+                <div class="answers-tracker">
+    
+                </div>
+    
+                <!--this is for the container that hold the users score and images for high score and low score-->
+                <div class="quiz-over">
+                    <div class="box">
+                        <h1 id="message">great or Poor result</h1> <br>
+                        <img src="/images" alt="good and poor images" class="images" />
+                        <h1> <br>
+                            You got <span class="correct-answers"></span> out of
+                            <span class="total-questions2"></span> answers correct.
+                            That is <span class="percentage"></span>
+                    </div>
+                    <button type="button" onclick="tryAgain()" class="btn1">Play Again! </button><br>
+    
+                    <button type="button" onclick="goHome()" class="btn1">Go Home! </button>
+    
+                </div>
             </div>
         </div>
-        <!--Here the the main conatiner for the quiz-->
-        <div class="container-quiz1">
-
-
-            <div class="question-option">
-                <h3>Question <span class="question-num-value"></span> of
-                    <span class="total-questions"></span>
-                </h3>
-            </div>
-            <div class="question">
-                What do you know about Nature and Science?
-            </div>
-            <!--Here the the conatiner for the  quiz options-->
-            <div class="options">
-                <div id="0" class="option1" onclick="check(this)"></div>
-                <div id="1" class="option2" onclick="check(this)"></div>
-                <div id="2" class="option3" onclick="check(this)"></div>
-                <div id="3" class="option4" onclick="check(this)"></div>
-            </div>
-            <div>
-                <button type="button" onclick="next()" class="btn1">Next</button>
-            </div>
-            <!--the markup for the result-->
-            <div class="answers-tracker">
-
-            </div>
-        </div>
-        <!--this is for the container that hold the users score and images for high score and low score-->
-        <div class="quiz-over">
-            <div class="box">
-                <h1 id="message">great or Poor result</h1> <br>
-                <img src="/images" alt="good and poor images" class="images" />
-                <h1> <br>
-                    You got <span class="correct-answers"></span> out of
-                    <span class="total-questions2"></span> answers correct.
-                    That is <span class="percentage"></span>
-                </h1>
-                <button type="button" onclick="tryAgain()" class="btn1">Play Again! </button><br>
-
-                <button type="button" onclick="goHome()" class="btn1">Go Home! </button>
-
-            </div>
-        </div>
-    </div>
-
-
-  
-        
-
-</div>
-<script src="assets/js/main.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+    
 </body>
-
 </html>
