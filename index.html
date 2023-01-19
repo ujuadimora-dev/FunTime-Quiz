@@ -19,12 +19,9 @@
 </head>
 
 <body>
-
-
-
-
     <!--This is home page and it for the  user autentication; the user name and password before he or she will be
          allow to play the quiz-->
+         <!--Here is markup for Header-->
     <div class="container">
         <header class="primary-header">
             <div class="container-header">
@@ -35,23 +32,25 @@
 
                     <nav class="primary-navigation">
                         <ul aria-label="Primary" role="li" class="nav-li" id="primary-navigation">
-                            <li><a class="active" href="index.html">Home</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a class="active" href="index.html" aria-label="Go to Home Page" >Home</a></li>
+                            <li><a href="contact.html"aria-label="Go to the Top for contact page" >Contact</a></li>
                         </ul>
                     </nav>
                 </div>
-
-                <div id="home" class=" flex-colunm flex-center">
-                    <h2> Enter Your Name to Play</h2>
-                    
-                    <form class="form-container" name="myForm" action="play.html" onsubmit="return validateForm()" method="get">
-                        <input type="text" name="name" id="username" placeholder="Enter your name" required>
-                        <input type="submit" name="name" value="submit" onclick="validate()" class="btn">
+                <!--Here is the markup for main-->
+                <main> 
+                    <div id="home" class=" flex-colunm flex-center">
+                        <h2> Enter Your Name to Play</h2>
                         
+                        <form class="form-container" name="myForm" action="play.html" onsubmit="return validateForm()" method="get">
+                            <input type="text" name="name" id="username" placeholder="Enter your name" required>
+                            <input type="submit" name="name" value="submit" onclick="validate()" class="btn1">
                         </form>
-                   
-                </div>
+                       
+                    </div>
+                </main>
 
+                <!--Here is the markup for footer-->
                 <footer class="footer-nav">
                     <div class="even-columns">
 

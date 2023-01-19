@@ -1,8 +1,4 @@
-/*body{
-    margin:0;
-    background-color: #009688;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}*/
+
 *{box-sizing: border-box;}
 
 html, body {margin: 0; height: 100%; overflow: hidden}
@@ -127,17 +123,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     animation-fill-mode: forwards;
 }
 
-/*.button .btn{
-    padding: 10px 30px;
-    background-color: #40c91e;
-    font-size: 18px;
-    color: white;
-    border:none;
-    cursor:pointer;
-    border-radius: 5px;
-    display: inline-block;
-    margin:10px 0;
-}*/
+
 
 .btn1{
 
@@ -208,26 +194,54 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     flex-basis: 700px;
     max-width: 700px;
     color: white;
-   /*  box-shadow: #009688;*/
+   
 }
 
 .quiz-over .box  h1{
     font-size: 30px;
     margin:0 0 20px
 }
-/* 
-.quiz-over .box button{
-    padding: 15px 50px;
-    border:none;
-    background-color: #1a9940;
-    border-radius: 5px;
-    font-size: 16px;
-    margin:15px 0 20px;
-    color: rgb(231, 231, 231);
-    background: linear-gradient(90deg, rgb(12, 175, 85)0%, rgba(76, 223, 71, 0.829)100%);
-    cursor: pointer;
-
-} */
-
+/*-- media query for Mobile-*/
+@media screen and (min-width: 320px) {
+    body {
+      background-color: rgb(162, 19, 164);
+      
+    }
+    #primary-nav{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color: #fff;
+        margin-left:0%;
+    }
+    .answers-tracker div {
+        height: 20px;
+        width: 17px;
         
+    }
+    .options div{
+        font-size: 12px;
+        padding: 8px;
+    }
+    h2{
+        font-size: 2rem;
        
+     }
+
+     input{
+        width: 20rem;
+        
+     }
+     h1{
+        font-size: 2.4rem;
+     }
+     p{
+    
+        font-size: 1.0rem;
+        line-height: 3rem;
+        margin-bottom: 3rem;
+     }
+     
+  }
+
+

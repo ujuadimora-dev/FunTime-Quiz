@@ -1,5 +1,6 @@
-// declaring variable used
-
+/**
+ * This is section is the delaration of the variable used
+ */
 const answersTrackerContainer = document.querySelector(".answers-tracker")
 const options = document.querySelector(".options").children
 const questionNumberSpan = document.querySelector(".question-num-value")
@@ -18,7 +19,9 @@ const opt1 = document.querySelector(".option1")
 const opt2 = document.querySelector(".option2")
 const opt3 = document.querySelector(".option3")
 const opt4 = document.querySelector(".option4")
-
+/**
+ * This is section is the array of 10 questions and answere for the quiz 
+ */
 const questions = [
     
         {
@@ -38,8 +41,8 @@ const questions = [
         },
     
         {
-            q:'During which month of the year does the Summer Solstice occur in the Northern Hemisphere?',
-            options:['June', 'July', 'May', 'September'],
+            q:'What is a young bear called?',
+            options:['cub', 'mat', 'cun', 'ban'],
             answer:0
         },
         {
@@ -74,8 +77,13 @@ const questions = [
             answer:1
         },
       ]
+
+      
 totalQuestionsSpan.innerHTML = questions.length
-// this is incremment the options
+
+/**
+ * This Fuction load the option and increment it by 1
+ */
 function load(){
     questionNumberSpan.innerHTML = index + 1
     question.innerHTML = questions[currentIndex].q;
@@ -86,7 +94,10 @@ function load(){
     index++
 }
 
-//Check if selected answer is correct or wrong and incremnet the score if the answere is correct
+/**
+ * /This fuction Check if selected answer is correct or wrong and incremnet the score if the answer is correct
+ * @param {number} element 
+ */
 function check(element){
     if(element.id == questions[currentIndex].answer){
         element.className="correct"
@@ -100,7 +111,9 @@ function check(element){
     disableClick();
 }
 
-//Make sure the user selected an item before clicking on the Next button
+/**
+ * This function ckeck that  the user selected an option before clicking on the Next button
+ */
 function validate(){
     if(!options[0].classList.contains("disabled")){
         alert("Please select an option")
@@ -111,12 +124,15 @@ function validate(){
     }
 }
 
-//Listener function for click event on Next button
+/**
+ *  This function Listens for click event on Next button
+ */
 function next(){
     validate();
 }
-
-//Function to disable click for the options
+/**
+ * This Function to disable click event for the options
+ */
 function disableClick(){
     for(let i=0; i<options.length; i++){
         options[i].classList.add("disabled")
@@ -127,7 +143,9 @@ function disableClick(){
     }
 }
 
-//Function to reanable click in the options
+/**
+ * Function to reanable click event in the options
+ */
 function enableClick(){
     for(let i=0; i<options.length; i++){
         options[i].classList.remove("disabled", "correct", "wrong")
@@ -135,7 +153,9 @@ function enableClick(){
     }
 }
 
-//Function to select a random question
+/**
+ * //This Function to generate  questions randomly
+ */
 function randomQuestion(){
     let randomNumber = Math.floor(Math.random()*questions.length);
     if(index == questions.length){
@@ -160,13 +180,17 @@ function randomQuestion(){
     }
 }
 
-//Restart the quiz
+/**
+ * The function to Restart or to play the quiz againthe quiz
+ */
 window.onload=function(){
     this.randomQuestion();
     this.answersTracker();
 }
 
-//Set up answers tracker elements
+/**
+ * /function to Set up answers tracker elements
+ */
 function answersTracker(){
     for(let i=0; i< questions.length; i++){
         const div =document.createElement("div")
@@ -174,31 +198,32 @@ function answersTracker(){
     }
 }
 
-//Update the answers tracker elements
+/**
+ * //Function to Update the answers tracker elements
+ * @param {unmber} newClass 
+ */
 function updateAnswersTracker(newClass){
     answersTrackerContainer.children[index -1].classList.add(newClass)
 }
 
 
-//Displays the quiz-over page if quiz is over
+/**
+ * The function to Displays the scores or result 
+ */
 function quizOver(){
     document.querySelector(".quiz-over").classList.add("show")
     correctAnswersSpan.innerHTML = score;
     totalQuestionsSpan2.innerHTML = questions.length
     percentageSpan.innerHTML=Math.round((score/questions.length)*100) + "%"
     
-    // message for the  low score and high scores
+    /**
+     * This message for the  low score and high scores
+     */
    let message= [ 'Great Job' , ' You really need to do better']
    let images = ['assets/images/great-job.gif','assets/images/poor-score.gif']
-   //images = document.querySelector(',images')
-   //if( images.style) {
-       //images.height = 200;
-       //images.width = 300;
-   //}
    
    let range;
   
-   
     if(score > 6 )  {
         range = 0;   
     }else
@@ -209,13 +234,24 @@ function quizOver(){
 document.querySelector("#message").innerHTML = message[range];
 document.querySelector(".images").src = images[range];
 document.querySelector(".images").width = 300
-//document.querySelector("images").src = images[range]
 }
 
-
+/**
+ * function to play the quiz again
+ */
 function tryAgain(){
     window.location.reload();
 }
+/**
+ * function to jump to Home page
+ */
 function goHome(){
     window.location.href="../index.html"
+}
+
+/**
+ * function to play the quiz
+ */
+function playQuiz(){
+    window.location.href="../quiz.html"
 }
