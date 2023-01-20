@@ -100,24 +100,8 @@ Poor The result or score is when the user score between 0 and 5. As shown below
 
 ## Design
 
-###  Make sheet Wireframes: In future,it will be no longer with make sheet- It will be done professionally.
-<br>
 Home Page
 <br><br>
-
-![Home Page large screen](assets/docs/readme-images/home-wiref.jpg)
-
-<br><br>
-Contact us Page
-<br><br>
-![Contact page form](assets/docs/readme-images/countact-wiref.jpg)
-
-![Contact form submission success](assets/docs/readme-images/thanks-wiref.jpg)
-
-
-Blog page
-<br><br>
-![Blog](assets/docs/readme-images/blog-wiref.jpg)
 
 
 

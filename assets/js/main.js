@@ -2,7 +2,7 @@
  * This is section is the delaration of the variable used
  */
 const answersTrackerContainer = document.querySelector(".answers-tracker")
-const options = document.querySelector(".options").children
+const options = document.querySelector(".options").children()
 const questionNumberSpan = document.querySelector(".question-num-value")
 const question=document.querySelector(".question")
 const totalQuestionsSpan =document.querySelector(".total-questions")
