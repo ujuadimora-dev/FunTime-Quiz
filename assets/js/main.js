@@ -2,7 +2,7 @@
  * This is section is the delaration of the variable used
  */
 const answersTrackerContainer = document.querySelector(".answers-tracker")
-const options = document.querySelector(".options").children()
+const options = document.querySelector(".options").children
 const questionNumberSpan = document.querySelector(".question-num-value")
 const question=document.querySelector(".question")
 const totalQuestionsSpan =document.querySelector(".total-questions")
@@ -246,12 +246,12 @@ function tryAgain(){
  * function to jump to Home page
  */
 function goHome(){
-    window.location.href="../index.html"
+    window.location.href="index.html"
 }
 
 /**
  * function to play the quiz
  */
 function playQuiz(){
-    window.location.href="../quiz.html"
+    window.location.href="quiz.html"
 }
