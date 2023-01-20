@@ -40,18 +40,18 @@ Play page
 * Below is the image of the play page.
 ![Play](assets/doc/readme-images/play-page.png)
 
-* This section tells the user what type of quiz is going to take so as to prepare his mind
-1. Its tell the user that is not going be to be easy.
-2. It Also tell the user that is going to be FUN .
+* This section tells the user what type of quiz(in this  case general knowledge on Nature and science) is going to take so as to prepare his mind to be ready.
+ 1. Its tell the user that is not going be to be easy.
+2. It also tell the user that is going to be FUN  and Educational.
 
 
 Contact Us Page
 This page shows the signup form
 
 *	Contact form
-*	This contact form is implemented to allow users to contact 'Ever Young' and as well sign up for newsletter( weekly, monthly or yearly) The form consist of the following fields and attributes:
-*	Username (required, type=text required)
-*	Email (required, type=email)
+*	This contact form is implemented to allow users to contact 'FunTime-Quiz' 
+*	Username (is not not a must)
+*	Email (email is not a must)
 * On  submission of the contact form, the user will be navigated to 404 page.html displaying that the page is under contruction.
 *	This will allow to follow on our social media platform
 
@@ -60,37 +60,43 @@ This page shows the signup form
 ![404 Message Received](assets/doc/readme-images/404-page.PNG)
 
 
-### Quiz  section Page
-* This page provides the user with vital information and tips for the total well being of the user. AS it can be seen at the Text on the background picture. It stated “your health  your wealth”  The is the directories of the organic  and  food supplement as well as  helpful tips of life.
-The blog consists of ;
-1.Background image that shows a woman having rest at the beach. I design the background the way it looks. I picked different pictures (pexel.com, pictures from Microsoft office gallery and assembled them together.
-2. section showing Recent Post
-3. Section showing Popular Post
-4. Section showing users Testimonies
-5. section showing social media which are in all three pages for consistency
-6. There are read more that will take the user to sign up page if the use to know more about the particular product or the like
+### Quiz  section Page( the credit goes to this site https://youtu.be/2Bpiluefkh8 , it is a tutorial video)
+* This page has ten(10) questions and four (4)options to select from each time a question is being asked
+The  consists of ;
+1.Score borad for the Great Score
+2. Score board for a poor score or result
+3. The user must select option befor going to another question
 
-![Blog](assets/docs/readme-images/blog-page.png)
+
+![Quiz section](assets/doc/readme-images/quiz-page.png)
+
+
+Great Result or score is when the user score above 5( that is >5). As shown in the image below
+
+![Great score](assets/doc/readme-images/good-score.png)
+
+Poor The result or score is when the user score between 0 and 5. As shown below
+
+![Poor score](assets/doc/readme-images/low-score.png)
 
 
 
 ## Existent Features
 *	Responsive design
-*	There are some animations on the About Ever young
-*	Contact form and thank you message page
-*	There is a toggle button for the mobile. Java script was used because it cannot be done with only CSS.
-*	There is also a button to call  and there is a an established connection
+*	There are some animations on the site
+*	Contact form and 404 message
+*	The the user must enter username be playing the game
+*	There are buttons to to replay the Quiz and navigate you to the Home page
 
 
 
 ### Features Left to Implement
 
-* 	As a future enhancement, the contact form will be updated with javascript to send an email to “Ever Young” with the contact 
+* 	As a future enhancement, the contact form will be updated with javascript to send an email to “FunTime-Quiz” with the contact 
     information.
-*	There would be multiple pages for user to navigate to if they click more
-*	There would be dedicated Twitter, you tube (demonstrate videos for products or Tips) and Facebook handle dedicated to Ever Young
-*	There should Google map showing the location of Ever Young
-*	It should be an Affiliate Marketing site for some sites in Future
+*	There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'FunTime-Quiz'
+*	There should Google map showing the location of FunTime-Quiz
+*	It should also in Future be a firm that is decated for Eductional quizzes for schools( both Primary and tericially institutions)
 
 ## Design
 
@@ -121,6 +127,8 @@ Blog page
     * The structure of the Website was developed using HTML as the main language.
 * CSS
     * The Website was styled using custom CSS in an external file.
+* Javascripts
+    * The Website was interative using custom Javascript in an external file.
 * Visual Studio Code
     * The website was developed using Visual Studio Code IDE
 * GitHub
@@ -141,7 +149,7 @@ All pages were tested to ensure responsiveness on screen sizes from 320px and up
 
 Steps to test:
 
-1. Open browser and navigate to [Ever Young]( https://ujuadimora-dev.github.io/ever-young/)
+1. Open browser and navigate to [FunTime-Quiz]( https://ujuadimora-dev.github.io/FunTime-Quiz//)
 2. Open the developer tools (right click and inspect)
 3. Set to responsive and decrease width to 320px
 4. Set the zoom to 50%
@@ -200,46 +208,34 @@ Testing was performed to ensure all navigation links on the respective pages, na
 | Navigation Link | Page to Load    |
 | --------------- | --------------- |
 | Home            | index.html      |
-| Blog            | blog.html |
-| Contact Us      | signup.html    |
+| Contact Us      | contact.html    |
 
 Links on all pages navigated to the correct pages as exptected.
 
 **Form Testing**
 
-The form on the contact Us page was tested to ensure it functioned as expected when correct data was input and when incorrect data was input. The following test scenarios were covered:
+The form on the contact Home page was tested to ensure it functioned as expected when correct data was input and when incorrect data was input. The following test scenarios were covered:
 
 _Scenario One - Correct Inputs_
 
 Steps to test:
 
-1. Navigate to [Everjoung - Home Page]( https://ujuadimora-dev.github.io/ever-young/)
+1. Navigate to [FunTime-Quiz - Home Page]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 2. click the Contact us page  and fill in the  to the form and input the following data:
-   - First Name: Uju
-   - Last Name: Ada
-   - Email: Ada.uju@test.com
-   - Comment: This is super.( The commect is not a must requirement)
+    Name: Uju
 3. Click Submit
-4. User should be redirected to Thank-you.html confirmation page as expected
+4. User should be redirected to Play.html as expected
 
 Expected:
 
-Form submits with no warnings or errors and the user is redirected to a thank-you.html confirmation page.
+Form submits with no warnings or errors and the user is redirected to a play.html  page.
 
-Actual:
 
-The website behaved as expected with no errors or warnings and redirected to thanky-you.html.
 
-_Scenario Two - Missing Required Field First Name_ or last Name or Email address. it will prompt   "Missing Required Field "
-
-Steps to test:
-
-1. Navigate to [Home - Ever Joung]( https://ujuadimora-dev.github.io/ever-young/)
+1. Navigate to [Home - FunTime-Quiz]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 2. Scroll down to the form and input the following data:
-   - First Name:
-   - Last Name: Doe
-   - Email: doe.john@test.com
-   - Comment: This is a test.
+   - First Name: blanK
+   
 3. Click Submit
 
 Expected:
@@ -250,87 +246,15 @@ Actual:
 
 Website behaved as expected, error message was displayed and the form did not submit.
 
-_Scenario Three - Missing Required Field Last Name_
-
-Steps to test:
-
-1. Navigate to [Home - Ever Young]( https://ujuadimora-dev.github.io/ever-young/)
-2. Scroll down to the form and input the following data:
-   - First Name:John
-   - Last Name:
-   - Email: doe.john@test.com
-   - Comment: This is a test.
-3. Click Submit
-
-Expected:
-
-The form does not submit and an Error is displayed to tell the user that the field is required.
-
-Actual:
-
-Website behaved as expected, error message was displayed and the form did not submit.
-
-_Scenario Four - Missing Required Field Email_
-
-Steps to test:
-
-1. Navigate to [Ever young - Home Page]( https://ujuadimora-dev.github.io/ever-young/)
-2. Scroll down to the form and input the following data:
-   - First Name:John
-   - Last Name: Doe
-   - Email:
-   - Comment: This is a test.
-3. Click Submit
-
-Expected:
-
-The form does not submit and an Error is displayed to tell the user that the field is required.
-That  means if you did not fill in any field ( except comment) or incorected filled email address- It will prompt you
-
-See below;
-
-_Scenario  - Incorrect email format_
-
-Steps to test:
-
-1. Navigate to [Ever Young - Home Page]( https://ujuadimora-dev.github.io/ever-young/)
-2. Scroll down to the form and input the following data:
-   - First Name:uju
-   - Last Name: Ada
-   - Email: ada.ujujoung.com
-   - Comment: Perfect.
-3. Click Submit
-
-Expected:
-
-The form does not submit and an Error is displayed to tell the user that a valid email is required and the format it should be in.
-
-Actual:
-
-Website behaved as expected.
 
 **Footer Social Media Icons / Links**
 
-Testing was performed on the Font Awesome Social Media icons in the footer to ensure that each one opened in a new tab and that each one had a hover affect of the orange branding color.
+Testing was performed on the Font Awesome Social Media icons in the footer to ensure that each one opened in a new tab and that each one had a hover affec color.
 
 Each item opened a new tab when clicked as expected and correct hover color was present.
 
-**Footer Contact Information**
-
-Testing was performed on the phone number in the contact information section of the footer to ensure behaviour was as expected.
-
-_Steps to test Telephone Number_
-
-1. Navigate to [Ever Young - Home Page]( https://ujuadimora-dev.github.io/ever-young/)
-2. Click the phone number in the footer area (+49 152 140 393914)
-
-Expected:
-
-A window is opened asking which device you would like to call from.
-
-Actual:
-
-Behavior was as expected and the window presented me with the following option to call:
+**Contact form**
+Testing was performed on the contact page . It will navigate the user to 404.html ,if the user inputs the user name or not. Actually it was expected because due to Time factor. As mention in the 404 message. It is still under contruction
 
 
 
@@ -378,7 +302,7 @@ The following git commands were used throughout development to push code to the 
   - Click 'Save'
   - A live link will be displayed in a green banner when published successfully. 
 
-The live link can be found here -  https://ujuadimora-dev.github.io/ever-young/
+The live link can be found here -  https://ujuadimora-dev.github.io/FunTime-Quiz/
 
 ### Clone the Repository Code Locally
 
@@ -397,17 +321,17 @@ The project will now of been cloned on your local machine for use.
 
 
 * (https://www.w3schools.com/)
-    *  some of the code was used from this site to create the blog. Styles were changed to suit styling on my Website. I recommend this site for every beginners.
+    *  some of the code was used from this site to create form. Styles were changed to suit styling on my Website. I recommend this site for every beginners.
 
    * https://stackoverflow.com]This site also help me in resovlving some issue in coding
     
-* [Youtube column, grid, media queries Tutorial](https://youtu.be/sKFW3wek21Q),https://youtu.be/zyNhxN6sToM
-    * I learn  lot from this video especially the  responsive of the website and CSS- I used some code but style differently.
+* [Youtube Tutorial](https://youtu.be/2Bpiluefkh8),
+    * I learn  lot from this video especially the  Javascript.
 
 
 ### Content 
 
-All contents and  media or image in this site was Fantasy( all are fantasied by me ) with the helps of these sites, I had mentioned  in the footer of this site ( some of the pictures or images are from these sites: Freeipks, Undraw, MS office  pictures garllery )
+All contents and  media or image on this site was Fantasy( all are fantasied by me )The with the help of pexel for their free pictures and .gif,  some of the pictures or images are from these sites: Freeipks, Undraw, MS office  pictures garllery )
 
 ### Media
 
