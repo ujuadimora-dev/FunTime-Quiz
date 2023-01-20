@@ -263,17 +263,17 @@ Testing was performed on the contact page . It will navigate the user to 404.htm
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
 
-![Home HTML Validator Results](assets/docs/test-images/index-validitytest.PNG)
+![Home HTML Validator Results](assets/doc/test-images/index-Val.PNG)
 
-![Blog HTML Validator Results](assets/docs/test-images/blog-html.textvalidity.PNG)
+![Play HTML Validator Results](assets/doc/test-images/play-vali.PNG)
 
-![Contact us Validator Results](assets/docs/test-images/contact-pagevalidity.PNG)
+![Contact us Validator Results](assets/doc/test-images/quiz-vali.PNG)
 
 
 - CSS
-  - One  error was found when passing through the official [(W3C validator]((https://validator.w3.org)
+  - There  wa no s found when passing through the official [(W3C validator]((https://validator.w3.org)
 
-![CSS Validator Results](assets/docs/test-images/css-valid.PNG)
+![CSS Validator Results](assets/doc/test-images/cssvalidation.PNG)
  * This is yet to be resolved, but will be address in future due time factor
 
 ### Unfixed Bugs
@@ -283,7 +283,7 @@ Responsiveness of the website worked on all devices, screen sizes and orientatio
 
 ### Version Control
 
-The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘tacos-travels’.
+The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘FunTime-Quiz’.
 
 The following git commands were used throughout development to push code to the remote repo:
 
@@ -331,9 +331,9 @@ The project will now of been cloned on your local machine for use.
 
 ### Content 
 
-All contents and  media or image on this site was Fantasy( all are fantasied by me )The with the help of pexel for their free pictures and .gif,  some of the pictures or images are from these sites: Freeipks, Undraw, MS office  pictures garllery )
+All contents and  media or image on this site was Fantasy( all are fantasied by me )The with the help of pexel for their free pictures and .gif(https://tenor.com/),  some of the pictures or images are from these sites: Freeipks, Undraw, MS office  pictures garllery )
 
 ### Media
 
-Website Logo was created by my me [Adimora Uju]( https://ujuadimora-dev.github.io/ever-young/) using logo.com(a free website).
+Website Logo was created by my me [Adimora Uju]( https://ujuadimora-dev.github.io/FunTime-Quiz/) using Microfot office powerpoint-
 
