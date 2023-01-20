@@ -237,7 +237,22 @@ html, body {margin: 0; height: 100%; overflow: hidden}
         line-height: 3rem;
         margin-bottom: 3rem;
      }
-     
+     h2{
+        font-size: 2.4rem;
+        margin-bottom: 6rem;
+        color: #fff
+     }
+     input{
+        margin-bottom: 1rem;
+        width: 20rem;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235  , 0.5);
+     }
+     .nav-wrapper {
+            display: relative;
+            padding-top: 4rem; 
+    }
   }
 
   /*-- media query @ 1024-*/
@@ -255,6 +270,18 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     #home img{
         width: 40%;
     }
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 4rem;
+        color: #fff;
+}
+
+p{
+    
+    font-size: 2.2rem;
+}
+   
+
 }
 
 

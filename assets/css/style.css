@@ -24,6 +24,18 @@ h2{
    margin-bottom: 4rem;
    color: #fff
 }
+.center-align{
+   text-align: center;
+
+}
+.padding {
+   padding-top: 5rem;
+
+}
+
+.margin-left{
+margin-left: 40rem;
+}
 
 
 /* the animation is credit to https://techblog.geekyants.com/some-of-the-most-popular-css-text-animations*/
@@ -118,8 +130,17 @@ p  {
    align-items: center;
 }
 
-
-
+/* contact*/
+.form-inline {  
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+ }
+ #social-net{
+   font-size: 1rem;
+ }
+ 
+ 
 /*-the form styling-*/
 .form-container{
    width: 80%;
