@@ -200,4 +200,33 @@ span{
        
    }
          
+   /*-- media query for Mobile-*/
+   @media (min-width: 320px) and (max-width: 480px)  {
+   .nav ul li a {
+      font-size: 1rem;
+  }
+  input {
+   margin-bottom: 7rem;
+    width: 18rem; 
+   padding: 1.5rem;
    
+}
+
+h2{
+   font-size: 2rem;
+}
+
+.logo img {
+   width: 70%;
+   height: 50%;
+}
+
+.social-icons {
+   
+   margin-left: 25%;
+   
+   
+}
+
+
+}
