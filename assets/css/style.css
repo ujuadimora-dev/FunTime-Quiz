@@ -118,6 +118,15 @@ text-decoration: none;
 }
 
 /* contact*/
+
+.backgd1{
+   background-image: url(../images/contact-us.svg);
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;  
+   
+}
+
 .form-inline {  
    display: flex;
    flex-flow: row wrap;

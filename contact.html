@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <meta name="description" content="FunTime-Quiz is a website  for learning and having fun Germany Eurpe">
     <meta name="keywords" content="Educative, having fun, nature, science, not easy, for school,  Germany, Europe">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>FunTime-quiz</title>
     <!-- google font   used-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,56 +14,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400;1,900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
-
     <!--This is home page and it for the  user autentication; the user name and password before he or she will be
          allow to play the quiz-->
+    <!--Here is markup for Header-->
     <div class="container">
         <header class="primary-header">
-            <div class="container-header">
-                <div class="nav-wrapper">
-                    <a href="index.html"><img id="logo" src="/assets/images/funtime-logo.svg" alt="logo for FunTime Quiz"
-                            style="width: 30%; height: 30%;"></a>
-                    <!--Here is the markup for the mobile toggling and aria here is because of the screen reader-->
-
-                    <nav class="primary-navigation">
-                        <ul aria-label="Primary" role="li" class="nav-li" id="primary-navigation">
-                            <li><a  href="index.html"  aria-label="Go to the Top for  the home page page">Home</a></li>
-                            <li><a  class="active" href="contact.html" aria-label="Go to the Top for  the home page page">Contact</a></li>
-                        </ul>
-                    </nav>
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/funtime-logo.svg"
+                            alt="logo for FunTime Quiz" style="width: 40%; height: 90%;"></a>
                 </div>
-            </div>
-            <div id="home" class=" flex-colunm flex-center">
-                <form form-inline action="404.html"  method="get">
-                    <h2>CONTACT US</h3>
-                    <p type="Name:"><input placeholder="Write your name here.."></input></p>
-                    <p type="Email:"><input placeholder="your Email.."></input></p>
-                    <input type="submit" name="name" value="submit"  class="btn1">     
-                  </form>
-            </div>
-
-            <footer class="footer-nav">
-                <div class="even-columns">
-                    <ul class="social-icons">
-                        <li> <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                                aria-label="Visit our facebook page (opens in a new tab)" class="fa fa-facebook"></a>
-                        </li>
-                        <li><a href="https://twitter.com/" target="_blank" rel="noopener"
-                                aria-label="Visit our Twitter page (opens in a new tab)" class="fa fa-twitter"></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"
-                                aria-label="Visit our linkedin page (opens in a new tab)" class="fa fa-linkedin"></a>
-                        </li>
-                        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                                aria-label="Visit our youtube page (opens in a new tab)" class="fa fa-youtube"></a>
-                        </li>
+                <div class="nav">
+                    <ul>
+                        <li><a  href="index.html" aria-label= "Go to Home Page">Home</a></li>
+                        <li><a class="active" href="contact.html" aria-label= "Go to the Top for contact page">Contact</a></li>
                     </ul>
-
                 </div>
-            </footer>
-       </div>
+            </div>
+        </header>
+        <!--Here is the markup for main-->
+        <main>
+            <div id="home" class=" flex-colunm flex-center  backgd  backgd1 ">
+                <h2 style="color: green;"> Let us be in Contact</h2>
+                <form class="form-container" name="myForm" action="404.html" onsubmit="return validateForm()"
+                    method="get">
+                    <input type="text" name="name" id="username" placeholder="Enter your name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="submit" name="name" value="submit" onclick="validate()" class="btn">
+                </form>
+            </div>
+        </main>
+        <!--Here is the markup for footer-->
+        <footer class="footer-nav">
+            <div class="even-columns">
+                <ul class="social-icons">
+                    <li> <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our facebook page (opens in a new tab)" class="fa fa-facebook"></a>
+                    </li>
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our Twitter page (opens in a new tab)" class="fa fa-twitter"></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our linkedin page (opens in a new tab)" class="fa fa-linkedin"></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our youtube page (opens in a new tab)" class="fa fa-youtube"></a>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
     </div>
     <script src="https://kit.fontawesome.com/72e64da51c.js" crossorigin="anonymous"></script>
     <script src="assets/js/pass.js"></script>
