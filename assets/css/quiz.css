@@ -257,6 +257,10 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     }
   }
 
+  .quiz-over .box h1 {
+    font-size: 20px;
+}
+
   /*-- media query @ 1024-*/
 @media screen and (min-width: 1024px) {
     
