@@ -14,15 +14,19 @@
 }
 /*-- General: reuse style-*/
 h1{
-   font-size: 5.4rem;
+   font-size: 3rem;
    color: #fff;
    margin-bottom: 5rem;
 }
 
 h2{ 
-   font-size: 4.2rem;
+   font-size: 2.7rem;
    margin-bottom: 4rem;
    color: #fff
+}
+h3{
+   font-size: 2.2rem;
+   color: #fff;
 }
 .center-align{
    text-align: center;
@@ -34,7 +38,10 @@ h2{
 }
 
 .margin-left{
-margin-left: 40rem;
+margin-left: 15rem;
+}
+.margin-bottom{
+   margin-bottom: 5%;
 }
 
 
@@ -168,6 +175,25 @@ span{
    color: rgb(6, 126, 34);
 }
 
+.btn1{
+       padding: 15px 50px;
+      border:none;
+      background-color: rgb(6, 126, 34);
+      border-radius: 5px;
+      font-size: 16px;
+      margin:15px 0 20px;
+      color: rgb(231, 231, 231);
+      background: linear-gradient(90deg, rgb( rgb(6, 126, 34))0%, rgba( rgb(6, 126, 34) 0.829)100%);
+      cursor: pointer;
+  }
+  
+  .btn1:hover {
+      cursor: pointer;
+      box-shadow: 0 0.4rem 1.4rem 0 rgba( rgb(6, 126, 34) 0.747);
+      transition: transform 150ms;
+      transform: scale(1.03);
+   }
+
  /*footer styling */
 
  .social-icons{
@@ -225,8 +251,16 @@ h2{
    
    margin-left: 25%;
    
-   
+}
+.margin-left {
+   margin-left: 5%;
 }
 
+}
 
+/*-- media query for Mobile-*/
+@media (min-width: 1024px){
+   h2{
+      font-size: 3.2rem;
+   }
 }
