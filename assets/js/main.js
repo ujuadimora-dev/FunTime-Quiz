@@ -219,16 +219,16 @@ function quizOver(){
     /**
      * This message for the  low score and high scores
      */
-   let message= [ 'Great Job!' , ' You really need to do better!']
-   let images = ['assets/images/great.gif','assets/images/poor.gif']
+   let message= [ 'You really need to do better!' , ' Great Job!']
+   let images = ['assets/images/poor.gif', 'assets/images/great-job.gif']
    
    let range;
   
     if(score > 6 )  {
-        range = 0;   
+        range = 1;   
     }else
      {
-        range = 1;
+        range = 0;
     }
      
 document.querySelector("#message").innerHTML = message[range];
