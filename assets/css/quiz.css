@@ -2,6 +2,22 @@
 *{box-sizing: border-box;}
 
 html, body {margin: 0; height: 100%; overflow: hidden}
+.logo{
+    width: 50%;
+    height: 40%;
+    margin-top: 1%;
+    margin-left: 4%;
+  }
+ 
+  .logo img {
+    width: 40%;
+    height: 90%;
+ }
+
+.logo img {
+    width: 40%;
+    height: 90%;
+}
 
 #primary-nav{
     display: flex;
@@ -9,7 +25,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     justify-content:center;
     align-items: center;
     color: #fff;
-    margin-left:80%;
+    margin-left:150%;
 }
 
 
@@ -263,9 +279,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
   /*-- media query @ 1024-*/
 @media screen and (min-width: 1024px) {
-    
-
-    input {
+     input {
         width: 30rem;
     }
 
@@ -287,6 +301,9 @@ p{
     font-size: 2.2rem;
 }
    
+#primary-nav {
+    margin-left: 240%;
+}
 
 }
 

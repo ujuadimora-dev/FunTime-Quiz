@@ -90,6 +90,11 @@ p  {
    margin-left: 4%;
  }
 
+ .logo img {
+   width: 40%;
+   height: 90%;
+}
+
  .nav{
    width: 50%;
  }
@@ -248,7 +253,7 @@ h1{
 }
 .logo img {
    width: 70%;
-   height: 50%;
+   height: 100%;
 }
 
 .social-icons {
