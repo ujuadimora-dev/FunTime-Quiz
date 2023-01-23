@@ -1,10 +1,10 @@
-FunTime-Quiz
+## FunTime-Quiz
 
- Funtime- Quiz site is  an educational website- The user is test on on his/her knowlede on science and Natural . The iste is user friend and accesseble for screen reader  The site has three pages; Home,and contact pages, Quiz  and score sections.
+ Funtime- Quiz site is  an educational website- The user is test on on his/her knowledge on science and Nature. The iste is user friendly and accesseble for screen reader  The site has  sections; Home, and contact pages, & play, Quiz  and score sections.
 . View the live site here
  [here]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 
-![Mockup](./assets/doc/readme-images/mockup.png)
+![Mockup](assets/doc/readme-images/mock-site.png)
 
 ## Features 
 
@@ -24,43 +24,49 @@ FunTime-Quiz
 ![Footer](assets/doc/readme-images/footer-area.PNG)
 
 
-### Landing Page
+## Landing Page
 * Landing page image
 * This will help to immediately to just fillin his/her name.
 
 ![Landing Page Image](assets/doc/readme-images/home-page1.PNG)
 
-*	The user need to fill simple form. Only the name'
-*	Information about '' and the website’s purpose including an image background.
-*	This information lets the user know what the site is about.
+*	The user needs to fill simple form. Only the name'( Note: the user MUST fill in the name to be allowed to submit)
+*	Then the user will click submit button
 *	There is FunTime-quiz logo design by me. I used micerosoft office to  website design it.	
 *	The Home page is highlighted with a green color to show the page's active 
 
-Play page
+## Play page
 * Below is the image of the play page.
-![Play](assets/doc/readme-images/play-page.png)
 
-* This section tells the user what type of quiz(in this  case general knowledge on Nature and science) is going to take so as to prepare his mind to be ready.
+![Play section](assets/doc/readme-images/play-quiz.png)
+
+* This section tells the user what type of quiz(in this  case general knowledge on Nature and science)
+ is going to take so as to prepare his mind to be ready.
  1. Its tell the user that is not going be to be easy.
 2. It also tell the user that is going to be FUN  and Educational.
 
-
-Contact Us Page
-This page shows the signup form
+## Contact page
+ContactPage
+This page shows the contact form
 
 *	Contact form
 *	This contact form is implemented to allow users to contact 'FunTime-Quiz' 
-*	Username (is not not a must)
-*	Email (email is not a must)
-* On  submission of the contact form, the user will be navigated to 404 page.html displaying that the page is under contruction.
+*	Username (is must)
+*	Email (a must)
+* On successful submission of the contact form, the user will be navigated to Thank.html displaying Thank you message.
 *	This will allow to follow on our social media platform
 
-![Contact us page](assets/doc/readme-images/contact-page.PNG)
-
-![404 Message Received](assets/doc/readme-images/404-page.PNG)
+![Contact us page](assets/doc/readme-images/contact-form.png)
 
 
-### Quiz  section Page( the credit goes to this site https://youtu.be/2Bpiluefkh8 , it is a tutorial video)
+## thank you page
+*  This page shows the whrn the user successful subit the contact form.
+![Thank You message](assets/doc/readme-images/thank-u.png)
+
+
+
+
+### Quiz  section Page( the credit goes to this site https://youtu.be/2Bpiluefkh8 , it is a You Tube  tutorial video)
 * This page has ten(10) questions and four (4)options to select from each time a question is being asked
 The  consists of ;
 1.Score borad for the Great Score
@@ -68,18 +74,17 @@ The  consists of ;
 3. The user must select option befor going to another question
 
 
-![Quiz section](assets/doc/readme-images/quiz-page.png)
+![Quiz section](assets/doc/readme-images/quiz-sec.png)
 
+Great Result or score is when the user score above 5( that is >6). As shown in the image below
 
-Great Result or score is when the user score above 5( that is >5). As shown in the image below
+![Great score](assets/doc/readme-images/great-work.png)
 
-![Great score](assets/doc/readme-images/good-score.png)
+Poor The result or score is when the user score between 0 and 6. As shown below
 
-Poor The result or score is when the user score between 0 and 5. As shown below
+![Poor score](assets/doc/readme-images/poor-mark.png)
 
-![Poor score](assets/doc/readme-images/low-score.png)
-
-
+![How does the app work](assets/doc/codde2.mht)
 
 ## Existent Features
 *	Responsive design

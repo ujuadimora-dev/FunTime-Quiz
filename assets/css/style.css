@@ -233,13 +233,13 @@ span{
    }
          
    /*-- media query for Mobile-*/
-   @media (min-width: 320px) and (max-width: 480px)  {
+ @media (min-width: 320px) and (max-width: 480px)  {
    .nav ul li a {
       font-size: 2rem;
   }
   input {
    margin-bottom: 7rem;
-    width: 18rem; 
+   width: 21rem; 
    padding: 1.5rem;
    
 }

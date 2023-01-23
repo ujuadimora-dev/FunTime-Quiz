@@ -3,16 +3,16 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 .logo{
-    width: 50%;
-    height: 40%;
-    margin-top: 1%;
-    margin-left: 4%;
-  }
- 
-  .logo img {
-    width: 40%;
-    height: 90%;
+   width: 50%;
+   height: 40%;
+   margin-top: 1%;
+   margin-left: 4%;
  }
+
+ .logo img {
+   width: 40%;
+   height: 90%;
+}
 
 .logo img {
     width: 40%;
@@ -162,8 +162,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
  }
 
 .answers-tracker div{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     background-color: #ccc;
     display: inline-block;
     border-radius: 50%;
@@ -284,8 +284,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     }
 
     .answers-tracker div {
-        height: 40px;
-        width: 40px;
+        height: 45px;
+        width: 45px;
     }
     #home img{
         width: 40%;
