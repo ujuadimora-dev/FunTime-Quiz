@@ -84,7 +84,26 @@ Poor The result or score is when the user score between 0 and 6. As shown below
 
 ![Poor score](assets/doc/readme-images/poor-mark.png)
 
-![How does the app work](assets/doc/codde2.mht)
+## The following steps below shows how the App works
+![step 1 and 2](assets/doc/readme-images/sect1.jpg)
+
+![Step 3 and 4](assets/doc/readme-images/sect2.jpg)
+
+![step 5](assets/doc/readme-images/sect3.jpg)
+
+![step 6](assets/doc/readme-images/sec6.jpg)
+
+![ccontinues](assets/doc/readme-images/sect5.jpg)
+
+![continues..](assets/doc/readme-images/sect6.jpg)
+
+![continues..](assets/doc/readme-images/sect7.jpg)
+
+![continues..](assets/doc/readme-images/sect8.jpg)
+
+
+
+
 
 ## Existent Features
 *	Responsive design
