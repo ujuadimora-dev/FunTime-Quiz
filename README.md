@@ -1,10 +1,10 @@
-## FunTime-Quiz
+# FunTime-Quiz
 
  Funtime- Quiz site is  an educational website- The user is test on on his/her knowledge on science and Nature. The iste is user friendly and accesseble for screen reader  The site has  sections; Home, and contact pages, & play, Quiz  and score sections.
 . View the live site here
  [here]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 
-![Mockup](assets/doc/readme-images/mock-site.png)
+![Mockup](assets/doc/readme-images/mockup-site.png)
 
 ## Features 
 
@@ -56,16 +56,16 @@ This page shows the contact form
 * On successful submission of the contact form, the user will be navigated to Thank.html displaying Thank you message.
 *	This will allow to follow on our social media platform
 
-![Contact us page](assets/doc/readme-images/contact-form.png)
+![Contact us page](assets/doc/readme-images/contac-form.png)
 
 
-## thank you page
+## Thank you page
 *  This page shows the whrn the user successful subit the contact form.
+
+
 ![Thank You message](assets/doc/readme-images/thank-u.png)
 
-
-
-
+## Quiz section
 ### Quiz  section Page( the credit goes to this site https://youtu.be/2Bpiluefkh8 , it is a You Tube  tutorial video)
 * This page has ten(10) questions and four (4)options to select from each time a question is being asked
 The  consists of ;
@@ -103,15 +103,12 @@ Poor The result or score is when the user score between 0 and 6. As shown below
 
 
 
-
-
 ## Existent Features
 *	Responsive design
 *	There are some animations on the site
-*	Contact form and 404 message
+*	Contact form and thank you message
 *	The the user must enter username be playing the game
 *	There are buttons to to replay the Quiz and navigate you to the Home page
-
 
 
 ### Features Left to Implement
@@ -119,13 +116,28 @@ Poor The result or score is when the user score between 0 and 6. As shown below
 * 	As a future enhancement, the contact form will be updated with javascript to send an email to “FunTime-Quiz” with the contact 
     information.
 *	There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'FunTime-Quiz'
-*	There should Google map showing the location of FunTime-Quiz
+*	There should Google map showing the location of FunTime-Quiz company
+*   Timer  for the quiz will be implemented in the future
 *	It should also in Future be a firm that is decated for Eductional quizzes for schools( both Primary and tericially institutions)
 
 ## Design
 
-Home Page
+## Home Page
+![Home page](assets/doc/readme-images/home-design.PNG)
 <br><br>
+
+## Instruction Page
+![insruction section](assets/doc/readme-images/inst-dessign.PNG)
+<br><br>
+
+## contact Page
+![contact page](assets/doc/readme-images/contdesin.PNG)
+<br><br>
+
+## contact Page
+![Quiz Section](assets/doc/readme-images/quiz-desgn.PNG)
+<br><br>
+
 
 
 
@@ -201,11 +213,16 @@ Issue : After keyboard controls were implemented, while testing the site with wi
 
 ### Lighthouse Testing
 
-![Home](assets/docs/test-images/homepage-lighthoutest.PNG)
+### Home Page
+![Home](assets/doc/test-images/home-lighttest.PNG)
 
-![Blog](assets/docs/test-images/blog-lighthoustest.PNG)
+### Quiz Section
 
-![contact us](assets/docs/test-images/contact-lighthousetest.PNG)
+![Quiz](assets/doc/test-images/quiz-leistung.PNG)
+
+### Contact Page
+
+![contact us](assets/doc/test-images/contact-leghthous.PNG)
 
 ### Functional Testing
 
@@ -270,16 +287,21 @@ Testing was performed on the contact page . It will navigate the user to 404.htm
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+### Home section
 
 ![Home HTML Validator Results](assets/doc/test-images/index-Val.PNG)
 
+### Quiz section
+
 ![Play HTML Validator Results](assets/doc/test-images/play-vali.PNG)
+
+### contact section
 
 ![Contact us Validator Results](assets/doc/test-images/quiz-vali.PNG)
 
 
 - CSS
-  - There  wa no s found when passing through the official [(W3C validator]((https://validator.w3.org)
+  - There  was no found when passing through the official [(W3C validator]((https://validator.w3.org)
 
 ![CSS Validator Results](assets/doc/test-images/cssvalidation.PNG)
  * This is yet to be resolved, but will be address in future due time factor
