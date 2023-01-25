@@ -1,6 +1,6 @@
 # FunTime-Quiz
 
- Funtime- Quiz site is  an educational website- The user is test on on his/her knowledge on science and Nature. The iste is user friendly and accesseble for screen reader  The site has  sections; Home, and contact pages, & play, Quiz  and score sections.
+ Funtime- Quiz site is  an educational website- The user is test on on his/her knowledge on science and Nature. The site is user friendly and accesseble for screen reader.  It  has  5 sections; Home , contact, play, Quiz, score sections.
 . View the live site here
  [here]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 
@@ -10,14 +10,14 @@
 
 ### Site wide
 *	Navigation Menu
-*	Contains links to the Home, and Contact Us pages and will be responsive at 320px, 600px, , 50em. 1024px
+*	Contains links to the Home, and Contact  pages and will be responsive at 320px, 600px, , 50em. 1024px
 *	This will allow users to easily navigate between the pages within the site on these sizes devices.
 
 
 ![Nav Menu](assets/doc/readme-images/nav-quiz.PNG)
 
 *	Footer
-*	This will contain icons as links to social media websites that will open in new tabs. Icons will be accessible to the visually impaired who may be using a screen reader, by the use of aria labels. 
+*	This  contain icons as links to social media websites that will open in new tabs. Icons will be accessible to the visually impaired who may be using a screen reader, by the use of aria labels. 
 *	The social media link will allow the user to follow the 'FunTime-Quiz site' on various social media where they can get more up to date information that may not be displayed on the website. The contact information will allow the user to contact 'FunTime-Quiz' directly
 *	
 
@@ -26,7 +26,7 @@
 
 ## Landing Page
 * Landing page image
-* This will help to immediately to just fillin his/her name.
+* This will help to immediately  fillin his/her name.
 
 ![Landing Page Image](assets/doc/readme-images/home-page1.PNG)
 
@@ -40,7 +40,7 @@
 
 ![Play section](assets/doc/readme-images/play-quiz.png)
 
-* This section tells the user what type of quiz(in this  case general knowledge on Nature and science)
+* This section instruct the user what type of quiz(in this  case general knowledge on Nature and science)
  is going to take so as to prepare his mind to be ready.
  1. Its tell the user that is not going be to be easy.
 2. It also tell the user that is going to be FUN  and Educational.
@@ -51,10 +51,10 @@ This page shows the contact form
 
 *	Contact form
 *	This contact form is implemented to allow users to contact 'FunTime-Quiz' 
-*	Username (is must)
-*	Email (a must)
+*	Username (is a must;  if the user did not put in his/her name, the system will complain that the name must be writing)
+*	Email (a must ;if the user did not put in his/her email and must contain(@), the system will complain that the email with (@) must be writing))
 * On successful submission of the contact form, the user will be navigated to Thank.html displaying Thank you message.
-*	This will allow to follow on our social media platform
+
 
 ![Contact us page](assets/doc/readme-images/contac-form.png)
 
@@ -71,7 +71,7 @@ This page shows the contact form
 The  consists of ;
 1.Score borad for the Great Score
 2. Score board for a poor score or result
-3. The user must select option befor going to another question
+3. The user must select option before going to another question
 
 
 ![Quiz section](assets/doc/readme-images/quiz-sec.png)
@@ -113,8 +113,7 @@ Poor The result or score is when the user score between 0 and 6. As shown below
 
 ### Features Left to Implement
 
-* 	As a future enhancement, the contact form will be updated with javascript to send an email to “FunTime-Quiz” with the contact 
-    information.
+* 	As a future enhancement, the contact form will be updated with to send an email to “FunTime-Quiz 's email” and give the user notification information.
 *	There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'FunTime-Quiz'
 *	There should Google map showing the location of FunTime-Quiz company
 *   Timer  for the quiz will be implemented in the future
@@ -137,8 +136,6 @@ Poor The result or score is when the user score between 0 and 6. As shown below
 ## contact Page
 ![Quiz Section](assets/doc/readme-images/quiz-desgn.PNG)
 <br><br>
-
-
 
 
 ## Technologies
@@ -183,7 +180,7 @@ No elements overlap.
 
 Actual:
 
-Website behaved as expected with the exception of switching to landscape view in Mozilla Firefox. 
+Website behaved as expected with the exception of switching to landscape . 
 
 Website was also opened on the following devices and no responsive issues were seen:
 
@@ -209,7 +206,7 @@ Testing was focused to ensure the following criteria were met:
 
 Manual tests were also performed to ensure the website was accessible as possible and an accessibility issue was identified.
 
-Issue : After keyboard controls were implemented, while testing the site with windows 'Narrator' screenreader, it was not clearly known what the purpose of the labels/checkboxes were. An aria-label label was added to the labels for screen readers to alert them that the labels were clickable and what their purpose was. Note:  I was only able to perfoem thise text of th e time factor.
+Issue : After keyboard controls were implemented, while testing the site with windows 'Narrator' screenreader, it was not clearly known what the purpose of the labels/checkboxes were. An aria-label label was added to the labels for screen readers to alert them that the labels were clickable and what their purpose was. Note:  I was only able to perform thise text of th e time factor.
 
 ### Lighthouse Testing
 
@@ -239,7 +236,7 @@ Links on all pages navigated to the correct pages as exptected.
 
 **Form Testing**
 
-The form on the contact Home page was tested to ensure it functioned as expected when correct data was input and when incorrect data was input. The following test scenarios were covered:
+The form on the  Home page was tested to ensure it functioned as expected when correct data was input and when incorrect data was input. The following test scenarios were covered:
 
 _Scenario One - Correct Inputs_
 
@@ -255,20 +252,15 @@ Expected:
 
 Form submits with no warnings or errors and the user is redirected to a play.html  page.
 
-
-
+_Scenario two -  Inputs(nothing)
 1. Navigate to [Home - FunTime-Quiz]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 2. Scroll down to the form and input the following data:
-   - First Name: blanK
-   
+   - First Name: blanK  
 3. Click Submit
-
 Expected:
 
 The form does not submit and an Error is displayed to tell the user that the field is required.
-
 Actual:
-
 Website behaved as expected, error message was displayed and the form did not submit.
 
 
@@ -279,9 +271,38 @@ Testing was performed on the Font Awesome Social Media icons in the footer to en
 Each item opened a new tab when clicked as expected and correct hover color was present.
 
 **Contact form**
-Testing was performed on the contact page . It will navigate the user to 404.html ,if the user inputs the user name or not. Actually it was expected because due to Time factor. As mention in the 404 message. It is still under contruction
+Testing was performed on the contact page . It will navigate the user to Thank-you.html , 
 
+## Scenario One - Correct Inputs_
 
+Steps to test:
+## If the user inputs the user name and correct email with email format.
+Username: Ada
+Email; uju@gmail.com
+Submit;
+on clicking submit, It will navigate the user to Thank-you.html , 
+
+#  Scenario two - blank Inputs_
+
+Steps to test:
+But  if the user e.g;
+Username:
+Email; uju@gmail.com
+Submit;
+on clicking submit, there will a message telling the user that name filed must not be empty
+
+# Scenario One - in Correct email Inputs_
+
+Steps to test:
+
+But  if the user e.g;
+Username: uju
+Email; ujugmail.com
+Submit;
+on clicking submit, there will a message telling the user that email field must contain @ 
+
+# Actual:
+Website behaved as expected
 
 ### Validator Testing 
 
@@ -307,7 +328,7 @@ Testing was performed on the contact page . It will navigate the user to 404.htm
  * This is yet to be resolved, but will be address in future due time factor
 
 ### Unfixed Bugs
-Responsiveness of the website worked on all devices, screen sizes and orientation with the exception of landscape orientation on mozilla firefox. I was unable to resolve this bug on time but will address in a future release.
+Responsiveness of the website worked on all devices, screen sizes and orientation with the exception of landscape orientation. it wil be taking care of in future 
 
 ## Deployment
 

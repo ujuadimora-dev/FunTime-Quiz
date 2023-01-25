@@ -1,17 +1,19 @@
+* {
+    box-sizing: border-box;
+}
 
-*{box-sizing: border-box;}
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
 
-html, body {margin: 0; height: 100%; overflow: hidden}
-.logo{
-   width: 50%;
-   height: 40%;
-   margin-top: 1%;
-   margin-left: 4%;
- }
-
- .logo img {
-   width: 40%;
-   height: 90%;
+.logo {
+    width: 50%;
+    height: 40%;
+    margin-top: 1%;
+    margin-left: 4%;
 }
 
 .logo img {
@@ -19,39 +21,45 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     height: 90%;
 }
 
-#primary-nav{
+.logo img {
+    width: 40%;
+    height: 90%;
+}
+
+#primary-nav {
     display: flex;
     padding-top: -1rem;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     color: #fff;
-    margin-left:150%;
+    margin-left: 150%;
 }
 
 
-  
+
 #primary-nav li {
     float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-    
-   }
-  
-  #primary-nav li  a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-   color: #fff;
-   
-    
-  }
-  #primary-nav li  a:hover{
-    color: rgb(6, 126, 34)
-  }
+    font-size: 17px;
 
- 
-.container-quiz{
+}
+
+#primary-nav li a {
+    text-decoration: none;
+    color: #fff;
+
+
+}
+
+#primary-nav li a:hover {
+    color: rgb(6, 126, 34)
+}
+
+
+.container-quiz {
     max-width: 700px;
     min-height: 500px;
     background-color: rgb(54, 50, 50);
@@ -69,36 +77,36 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 
-.question{
+.question {
     font-size: 24px;
     color: rgb(218, 213, 213);
-    padding:15px 0;
+    padding: 15px 0;
     margin-bottom: 20px;
 }
 
-.options div{
+.options div {
     background-color: #ccc;
     font-size: 16px;
     color: black;
     margin-bottom: 10px;
     border-radius: 5px;
-    padding:15px;
+    padding: 15px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
 }
 
-.options div.disabled{
+.options div.disabled {
     pointer-events: none;
 }
 
-.options div.correct{
+.options div.correct {
     z-index: 1;
     color: rgb(213, 218, 214);
 }
 
 .options div.correct::before {
-    content:'';
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -111,57 +119,56 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     animation-fill-mode: forwards;
 }
 
-@keyframes animateBackground{
-    0%{
+@keyframes animateBackground {
+    0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0%);
     }
 }
 
-.options div.wrong{
+.options div.wrong {
     z-index: 1;
     color: white;
 }
 
 .options div.wrong::before {
-    content:'';
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color:red;
+    background-color: red;
     z-index: -1;
 
     animation: animateBackground 1s ease;
     animation-fill-mode: forwards;
 }
 
-
-
-.btn1{
+.btn1 {
 
     padding: 15px 50px;
-    border:none;
+    border: none;
     background-color: rgb(6, 126, 34);
     border-radius: 5px;
     font-size: 16px;
-    margin:15px 0 20px;
+    margin: 15px 0 20px;
     color: rgb(231, 231, 231);
-    background: linear-gradient(90deg, rgb( rgb(6, 126, 34))0%, rgba( rgb(6, 126, 34) 0.829)100%);
+    background: linear-gradient(90deg, rgb(rgb(6, 126, 34))0%, rgba(rgb(6, 126, 34) 0.829)100%);
     cursor: pointer;
 }
 
 .btn1:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba( rgb(6, 126, 34) 0.747);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(rgb(6, 126, 34) 0.747);
     transition: transform 150ms;
     transform: scale(1.03);
- }
+}
 
-.answers-tracker div{
+.answers-tracker div {
     height: 45px;
     width: 45px;
     background-color: #ccc;
@@ -170,24 +177,23 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     margin-right: 5px;
 }
 
-
-.answers-tracker div.correct{
-    background-color:  rgb(6, 126, 34);
-    background-image:url('../images/good-grage.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;  
-}
-
-.answers-tracker div.wrong{
-    background-color: rgb(245, 237, 237);
-    background-image:url('../images/noo-mark.png');
+.answers-tracker div.correct {
+    background-color: rgb(6, 126, 34);
+    background-image: url('../images/good-grage.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
 }
 
-.quiz-over{
+.answers-tracker div.wrong {
+    background-color: rgb(245, 237, 237);
+    background-image: url('../images/noo-mark.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.quiz-over {
     position: fixed;
     left: 0px;
     top: 0px;
@@ -195,91 +201,100 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     height: 100%;
     background-color: rgb(32, 30, 30);
     z-index: 10;
-    display:none;
+    display: none;
     align-items: center;
     justify-content: center;
 }
-.show{
-    display:flex;
+
+.show {
+    display: flex;
 }
 
-.quiz-over .box{
+.quiz-over .box {
     background-color: rgb(54, 50, 50);
     border-radius: 10px;
     text-align: center;
     flex-basis: 700px;
     max-width: 700px;
     color: white;
-   
+
 }
 
-.quiz-over .box  h1{
+.quiz-over .box h1 {
     font-size: 30px;
-    margin:0 0 20px
+    margin: 0 0 20px
 }
+
 /*-- media query for Mobile-*/
 @media screen and (min-width: 320px) {
-    #primary-nav{
+    #primary-nav {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         color: #fff;
-        margin-left:0%;
+        margin-left: 0%;
         margin-top: -15%;
     }
 
     .answers-tracker div {
         height: 20px;
         width: 17px;
-        
+
     }
-    .options div{
+
+    .options div {
         font-size: 12px;
         padding: 8px;
     }
-    h2{
-        font-size: 2rem;
-       
-     }
 
-     input{
+    h2 {
+        font-size: 2rem;
+
+    }
+
+    input {
         width: 20rem;
-        
-     }
-     h1{
+
+    }
+
+    h1 {
         font-size: 2.4rem;
-     }
-     p{
-    
+    }
+
+    p {
+
         font-size: 1.2rem;
         line-height: 3rem;
         margin-bottom: 3rem;
-     }
-     h2{
+    }
+
+    h2 {
         font-size: 2.4rem;
         margin-bottom: 6rem;
         color: #fff
-     }
-     input{
+    }
+
+    input {
         margin-bottom: 1rem;
         width: 20rem;
         padding: 1.5rem;
         font-size: 1.5rem;
-        box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235  , 0.5);
-     }
-     .nav-wrapper {
-            display: relative;
-            padding-top: 4rem; 
+        box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     }
-  }
 
-  .quiz-over .box h1 {
+    .nav-wrapper {
+        display: relative;
+        padding-top: 4rem;
+    }
+}
+
+.quiz-over .box h1 {
     font-size: 20px;
 }
 
-  /*-- media query @ 1024-*/
+/*-- media query @ 1024-*/
 @media screen and (min-width: 1024px) {
-     input {
+    input {
         width: 30rem;
     }
 
@@ -287,26 +302,24 @@ html, body {margin: 0; height: 100%; overflow: hidden}
         height: 45px;
         width: 45px;
     }
-    #home img{
+
+    #home img {
         width: 40%;
     }
+
     h2 {
         font-size: 2.2rem;
         margin-bottom: 4rem;
         color: #fff;
+    }
+
+    p {
+
+        font-size: 2.2rem;
+    }
+
+    #primary-nav {
+        margin-left: 240%;
+    }
+
 }
-
-p{
-    
-    font-size: 2.2rem;
-}
-   
-#primary-nav {
-    margin-left: 240%;
-}
-
-}
-
-
-
-
