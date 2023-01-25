@@ -1,5 +1,5 @@
 /**
- * This is section is the delaration of the variable used
+ * This is section is the delaration of the variable used( credited to  (https://youtu.be/2Bpiluefkh8)
  */
 const answersTrackerContainer = document.querySelector(".answers-tracker");
 const options = document.querySelector(".options").children;
@@ -15,64 +15,64 @@ let index = 0;
 let answeredQuestions =[]; // array of anwered question indexes
 let score = 0;
 
-const opt1 = document.querySelector(".option1")
-const opt2 = document.querySelector(".option2")
-const opt3 = document.querySelector(".option3")
-const opt4 = document.querySelector(".option4")
+const option1 = document.querySelector(".option1")
+const option2 = document.querySelector(".option2")
+const option3 = document.querySelector(".option3")
+const option4 = document.querySelector(".option4")
 /**
  * This is section is the array of 10 questions and answere for the quiz 
  */
 const questions = [
     
         {
-            q:'Which of these countries is dead sea located?',
+            quest:'Which of these countries is dead sea located?',
             options:['between Israel and Syria', 'between Israel and Jordan', 'between Japan and  China', 'between Nigeria and chad'],
             answer:1
         },
         {
-            q:'How many teeth does an adult cat normally have?',
+            quest:'How many teeth does an adult cat normally have?',
             options:['40', '45', '24', '30'],
             answer:3
         },
         {
-            q:'What type of creature is a Dog Face?',
+            quest:'What type of creature is a Dog Face?',
             options:['cat', 'Butterfly', 'lizard', 'goat'],
             answer:1
         },
     
         {
-            q:'What is a young bear called?',
+            quest:'What is a young bear called?',
             options:['cub', 'mat', 'cun', 'ban'],
             answer:0
         },
         {
-            q:'How many toes does a cat have on each front paw?',
+            quest:'How many toes does a cat have on each front paw?',
             options:['two', 'Ten', 'Five', 'six'],
             answer:2
         },
         {
-            q:'What is the Largest Planet in The Universe',
+            quest:'What is the Largest Planet in The Universe',
             options:['Earth', 'Jupiter', 'Mars', 'Mercury'],
             answer:1
         },
         {
-            q:'How tall is mount Everest?',
+            quest:'How tall is mount Everest?',
             options:['11,848.86 m (30,031.7 ft) ', '20,654.7ft', '4,987,78ft',  '8,848.86 m (29,031.7 ft) ',],
             answer:3
         },
         {
-            q: 'Which of  these is the  oldest tree in the world?',
+            quest: 'Which of  these is the  oldest tree in the world?',
             options:['Giant sequoia(Sequoiadendron giganteum)' , 'Coast live oak (Quercus agrifolia)', 'The Great Basin Bristlecone Pine (Pinus longaeva)', 'Limber pine'],
             answer:2
         },
         {
-            q:'Which is the fastest moving land snake in the world?',
+            quest:'Which is the fastest moving land snake in the world?',
             options:['Cat-eyed snake', 'Black mamba', 'hoop sanke', 'Zebra spitting cobra?'],
             answer:1
         },
     
         {
-            q:'What is the heaviest insect?',
+            quest:'What is the heaviest insect?',
             options:['fly', 'Bettle', 'cocoroach', 'mosquitoes'],
             answer:1
         },
@@ -86,11 +86,11 @@ totalQuestionsSpan.innerHTML = questions.length
  */
 function load(){
     questionNumberSpan.innerHTML = index + 1
-    question.innerHTML = questions[currentIndex].q;
-    opt1.innerHTML = questions[currentIndex].options[0]    
-    opt2.innerHTML = questions[currentIndex].options[1]
-    opt3.innerHTML = questions[currentIndex].options[2]
-    opt4.innerHTML = questions[currentIndex].options[3]
+    question.innerHTML = questions[currentIndex].quest;
+    option1.innerHTML = questions[currentIndex].options[0]    
+    option2.innerHTML = questions[currentIndex].options[1]
+    option3.innerHTML = questions[currentIndex].options[2]
+    option4.innerHTML = questions[currentIndex].options[3]
     index++
 }
 
@@ -112,7 +112,7 @@ function check(element){
 }
 
 /**
- * This function ckeck that  the user selected an option before clicking on the Next button
+ * This function check that  the user selected an option before clicking on the Next button
  */
 function validate(){
     if(!options[0].classList.contains("disabled")){
@@ -154,7 +154,7 @@ function enableClick(){
 }
 
 /**
- * //This Function to generate  questions randomly
+ * //This Function to generate  questions randomly(credit to the Love.Math project)
  */
 function randomQuestion(){
     let randomNumber = Math.floor(Math.random()*questions.length);
@@ -181,7 +181,7 @@ function randomQuestion(){
 }
 
 /**
- * The function to Restart or to play the quiz againthe quiz
+ * The function to Restart or to play the quiz again the quiz
  */
 window.onload=function(){
     this.randomQuestion();
@@ -189,7 +189,7 @@ window.onload=function(){
 }
 
 /**
- * /function to Set up answers tracker elements
+ * /function to Set up answers tracker elements credited to (https://youtu.be/2Bpiluefkh8)
  */
 function answersTracker(){
     for(let i=0; i< questions.length; i++){
@@ -208,7 +208,7 @@ function updateAnswersTracker(newClass){
 
 
 /**
- * The function to Displays the scores or result 
+ * The function to Displays the scores or result credited to (https://youtu.be/2Bpiluefkh8)
  */
 function quizOver(){
     document.querySelector(".quiz-over").classList.add("show")
@@ -222,17 +222,17 @@ function quizOver(){
    let message= [ 'You really need to do better!' , ' Great Job!']
    let images = ['assets/images/poor.gif', 'assets/images/great-job.gif']
    
-   let range;
+   let scope;
   
     if(score > 6 )  {
-        range = 1;   
+        scope = 1;   
     }else
      {
-        range = 0;
+        scope = 0;
     }
      
-document.querySelector("#message").innerHTML = message[range];
-document.querySelector(".images").src = images[range];
+document.querySelector("#message").innerHTML = message[scope];
+document.querySelector(".images").src = images[scope];
 document.querySelector(".images").width = 300
 }
 

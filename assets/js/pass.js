@@ -1,7 +1,7 @@
 
 
  /**
-  * This funtion valid user name
+  * This funtion valid user name(credit  to  https://www.w3schools.com/)
   * @returns false if the user name field is empty
   */
     function validateForm() {
