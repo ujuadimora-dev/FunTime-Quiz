@@ -34,58 +34,17 @@
                     </nav>
                 </div>
                 <!--Here the the main container for the quiz-->
-                <div class="container-quiz1">
-                    <div class="question-option">
-                        <h3>Question <span class="question-num-value"></span> of
-                            <span class="total-questions"></span>
-                        </h3>
-                    </div>
-                    <!--Here is the markup for the question this wil be populated in Javascript -->
 
-                    <div class="question">
-                        What do you know about Nature and Science?
-                    </div>
-                    <!--Here is the markup for the options(there are four options to chose from) answers for the  quiz: what 
-                        this does is that onclick  event that will be triggered when the user select option-, credited to youtube tutorial
-                        (https://youtu.be/2Bpiluefkh8)-->
-                    <div class="options">
-                        <div id="0" class="option1" onclick="check(this)"></div>
-                        <div id="1" class="option2" onclick="check(this)"></div>
-                        <div id="2" class="option3" onclick="check(this)"></div>
-                        <div id="3" class="option4" onclick="check(this)"></div>
-                    </div>
-                    <div>
-                        <button type="button" onclick="next()" class="btn1">Next</button>
-                    </div>
-                </div>
-                <!--the markup for the result tracker for tracking and the result-. the function is created in Javascript-->
-                <div class="answers-tracker">
+                <h2>Question</h2>
+                <div id="question"></div>
+                <div id="choices"></div>
+                <button id="submit">Submit</button>
+                <div id="timer">Time Remaining: <span id="time"></span></div>
+                <div id="score">Score: <span id="points"></span></div>
+                <button id="play-again" style="display:none;">Play Again</button>
+                <div id="result"></div>
 
-                </div>
-
-                <!--this is for the container that hold the users score and images for high score and low score-->
-                <div class="quiz-over">
-                    <div class="box">
-                        <h1 id="message">great or Poor result</h1> <br>
-                        <!--there is no images here, but in Javascript page-->
-                        <img src="/images" alt="good and poor images" class="images" />
-                        <br>
-                        <h1>
-                            You got <span class="correct-answers"></span> out of
-                            <span class="total-questions2"></span> answers correct.
-                            That is <span class="percentage"></span>
-                        </h1>
-                        <!--This on click event to replay the quiz- The function can be seen  Javascript page-->
-                        <button type="button" onclick="tryAgain()" class="btn1">Play Again! </button><br>
-                        <!--This on click event to jump to the home Page the quiz- The function can be seen  Javascript page-->
-                        <button type="button" onclick="goHome()" class="btn1" aria-label=" click
-                        k the button to  the home page">Go Home! </button>
-                    </div>
-
-                </div>
-            </div>
-        </header>
-    </div>
+                
     <script src="assets/js/main.js"></script>
 
 </body>
