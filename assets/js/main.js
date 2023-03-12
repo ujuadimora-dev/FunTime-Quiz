@@ -1,24 +1,10 @@
 /**
- * This is section is the delaration of the variable used( credited to  (https://youtu.be/2Bpiluefkh8)
+ * This is section is the delaration of the variable used
  */
-const answersTrackerContainer = document.querySelector(".answers-tracker");
-const options = document.querySelector(".options").children;
-const questionNumberSpan = document.querySelector(".question-num-value");
-const question=document.querySelector(".question");
-const totalQuestionsSpan =document.querySelector(".total-questions")
-const correctAnswersSpan =document.querySelector(".correct-answers")
-const totalQuestionsSpan2 =document.querySelector(".total-questions2")
-const percentageSpan =document.querySelector(".percentage")
+const question= document.querySelector("#question");
+const choices = document.querySelector("#choices").children;
+const timer = document.querySelector(".#timer");
 
-let currentIndex;
-let index = 0;
-let answeredQuestions =[]; // array of anwered question indexes
-let score = 0;
-
-const option1 = document.querySelector(".option1")
-const option2 = document.querySelector(".option2")
-const option3 = document.querySelector(".option3")
-const option4 = document.querySelector(".option4")
 /**
  * This is section is the array of 10 questions and answere for the quiz 
  */
@@ -79,133 +65,6 @@ const questions = [
       ]
 
       
-totalQuestionsSpan.innerHTML = questions.length
-
-/**
- * This Fuction load the option and increment it by 1
- */
-function load(){
-    questionNumberSpan.innerHTML = index + 1
-    question.innerHTML = questions[currentIndex].quest;
-    option1.innerHTML = questions[currentIndex].options[0]    
-    option2.innerHTML = questions[currentIndex].options[1]
-    option3.innerHTML = questions[currentIndex].options[2]
-    option4.innerHTML = questions[currentIndex].options[3]
-    index++
-}
-
-/**
- * /This fuction Check if selected answer is correct or wrong and incremnet the score if the answer is correct
- * @param {number} element 
- */
-function check(element){
-    if(element.id == questions[currentIndex].answer){
-        element.className="correct"
-        updateAnswersTracker("correct")
-        score++
-    }
-    else {
-        element.className="wrong"
-        updateAnswersTracker("wrong")
-    }
-    disableClick();
-}
-
-/**
- * This function check that  the user selected an option before clicking on the Next button
- */
-function validate(){
-    if(!options[0].classList.contains("disabled")){
-        alert("Please select an option")
-    }
-    else{
-        randomQuestion();
-        enableClick();
-    }
-}
-
-/**
- *  This function Listens for click event on Next button
- */
-function next(){
-    validate();
-}
-/**
- * This Function to disable click event for the options
- */
-function disableClick(){
-    for(let i=0; i<options.length; i++){
-        options[i].classList.add("disabled")
-
-        if(options[i].id == questions[currentIndex].answer){
-            options[i].classList.add('correct');
-        }
-    }
-}
-
-/**
- * Function to reanable click event in the options
- */
-function enableClick(){
-    for(let i=0; i<options.length; i++){
-        options[i].classList.remove("disabled", "correct", "wrong")
-
-    }
-}
-
-/**
- * //This Function to generate  questions randomly(credit to the Love.Math project)
- */
-function randomQuestion(){
-    let randomNumber = Math.floor(Math.random()*questions.length);
-    if(index == questions.length){
-        quizOver();
-    }
-    else{
-        if(answeredQuestions.length > 0){
-            if(answeredQuestions.includes(randomNumber)){
-                randomQuestion();
-            }
-            else {
-                currentIndex = randomNumber;
-                load();
-            }
-        }
-        if(answeredQuestions.length == 0){
-            currentIndex = randomNumber
-            load()
-        }
-        //add the question to list of anwered questions
-        answeredQuestions.push(randomNumber)
-    }
-}
-
-/**
- * The function to Restart or to play the quiz again the quiz
- */
-window.onload=function(){
-    this.randomQuestion();
-    this.answersTracker();
-}
-
-/**
- * /function to Set up answers tracker elements credited to (https://youtu.be/2Bpiluefkh8)
- */
-function answersTracker(){
-    for(let i=0; i< questions.length; i++){
-        const div =document.createElement("div")
-        answersTrackerContainer.appendChild(div);
-    }
-}
-
-/**
- * //Function to Update the answers tracker elements
- * @param {unmber} newClass 
- */
-function updateAnswersTracker(newClass){
-    answersTrackerContainer.children[index -1].classList.add(newClass)
-}
-
 
 /**
  * The function to Displays the scores or result credited to (https://youtu.be/2Bpiluefkh8)
