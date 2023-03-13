@@ -19,28 +19,24 @@
 </head>
 
 <body>
-    <div class="container1">
-        <header class="primary-header">
-            <div class="container-header">
-                <div class="nav-wrapper">
-                    <!--Here is the markup for navbar and there are arial-label for ther screenreader-->
-                    <nav>
-                        <ul id="primary-nav">
-                            <li><a class="active" href="index.html" style="font-size: 2rem;"
-                                    aria-label="Go to the Top for  the home page page">Home</a></li>
-                            <li><a href="contact.html" style="font-size: 2rem;"
-                                    aria-label="Go to the Top of the contact page">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-    </div>
 
     <!--Here the the main container for the quiz-->
     <div class="container-quiz1">
+        <header>
+            <!--Here is the markup for navbar and there are arial-label for ther screenreader-->
+            <nav>
+                <ul id="primary-nav">
+                    <li><a class="active" href="index.html" style="font-size: 2rem;"
+                            aria-label="Go to the Top for  the home page page">Home</a></li>
+                    <li><a href="contact.html" style="font-size: 2rem;"
+                            aria-label="Go to the Top of the contact page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <h1></h1>
         <div id="question"></div>
+        <div id="timer">Time Remaining: <span id="time"></span></div>
+
         <div id="choices"></div>
         <button id="submit">Submit</button>
         <div id="timer">Time Remaining: <span id="time"></span></div>
