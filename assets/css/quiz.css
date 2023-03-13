@@ -1,326 +1,99 @@
-* {
-    box-sizing: border-box;
+:root{
+  background-color: rgb(32, 30, 30);
+ 
 }
+/*-- the remove the original style from markup-*/
+*{
 
-html,
-body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden
-}
-
-.logo {
-    width: 50%;
-    height: 40%;
-    margin-top: 1%;
-    margin-left: 4%;
-}
-
-.logo img {
-    width: 40%;
-    height: 90%;
-}
-
-.logo img {
-    width: 40%;
-    height: 90%;
-}
-
-#primary-nav {
-    display: flex;
-    padding-top: -1rem;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin-left: 150%;
+border :0;
+outline :0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+font-size: 62.5%;
 }
 
 
+.container1{
+  display: flex;
+  flex-direction:column ;
+  width: 80vw;
+  height: 80vh;
+  background-color: rgb(54, 50, 50);
+  justify-content: center;
+  max-width: 80rem;
+  margin: 3rem auto;
+  padding: 3rem 3rem; 
+}  
 
-#primary-nav li {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-
-}
-
-#primary-nav li a {
-    text-decoration: none;
-    color: #fff;
-
-
-}
-
-#primary-nav li a:hover {
-    color: rgb(6, 126, 34)
-}
-
-/*  Here is the stle for the quiz section and   most codes in this section  here is creadied to the (https://youtu.be/2Bpiluefkh8),though i style it to 
-suite want i wanted*/
-.container-quiz {
-    max-width: 700px;
-    min-height: 500px;
-    background-color: rgb(54, 50, 50);
-    margin: 30px auto;
-    border-radius: 8px;
-    padding: 30px;
-}
-
-.question-option h3 {
-    color: rgb(6, 126, 34);
-    font-size: 20px;
-    border-bottom: 1px solid #ccc;
-    margin: 0;
-    padding-bottom: 10px;
-}
-
-
-.question {
-    font-size: 24px;
-    color: rgb(218, 213, 213);
-    padding: 15px 0;
-    margin-bottom: 20px;
-}
-
-.options div {
-    background-color: #ccc;
-    font-size: 16px;
-    color: black;
+label {
+    display: block;
     margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 15px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.options div.disabled {
-    pointer-events: none;
-}
-
-.options div.correct {
-    z-index: 1;
-    color: rgb(213, 218, 214);
-}
-
-.options div.correct::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(6, 126, 34);
-    z-index: -1;
-
-    animation: animateBackground 1s ease;
-    animation-fill-mode: forwards;
-}
-
-@keyframes animateBackground {
-    0% {
-        transform: translateX(-100%);
     }
-
-    100% {
-        transform: translateX(0%);
+  
+    .container-quiz1 {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgb(54, 50, 50);
     }
-}
-
-.options div.wrong {
-    z-index: 1;
-    color: white;
-}
-
-.options div.wrong::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    z-index: -1;
-
-    animation: animateBackground 1s ease;
-    animation-fill-mode: forwards;
-}
-
-.btn1 {
-
-    padding: 15px 50px;
-    border: none;
-    background-color: rgb(6, 126, 34);
-    border-radius: 5px;
-    font-size: 16px;
-    margin: 15px 0 20px;
-    color: rgb(231, 231, 231);
-    background: linear-gradient(90deg, rgb(rgb(6, 126, 34))0%, rgba(rgb(6, 126, 34) 0.829)100%);
-    cursor: pointer;
-}
-
-.btn1:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(rgb(6, 126, 34) 0.747);
-    transition: transform 150ms;
-    transform: scale(1.03);
-}
-
-.answers-tracker div {
-    height: 45px;
-    width: 45px;
-    background-color: #ccc;
-    display: inline-block;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-
-.answers-tracker div.correct {
-    background-color: rgb(6, 126, 34);
-    background-image: url('../images/good-grage.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-.answers-tracker div.wrong {
-    background-color: rgb(245, 237, 237);
-    background-image: url('../images/noo-mark.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-.quiz-over {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(32, 30, 30);
-    z-index: 10;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.show {
-    display: flex;
-}
-
-.quiz-over .box {
-    background-color: rgb(54, 50, 50);
-    border-radius: 10px;
-    text-align: center;
-    flex-basis: 700px;
-    max-width: 700px;
-    color: white;
-
-}
-
-.quiz-over .box h1 {
-    font-size: 30px;
-    margin: 0 0 20px
-}
-
-/*-- media query for Mobile-*/
-@media screen and (min-width: 320px) {
-    #primary-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        margin-left: 0%;
-        margin-top: -15%;
-    }
-
-    .answers-tracker div {
-        height: 20px;
-        width: 17px;
-
-    }
-
-    .options div {
-        font-size: 12px;
-        padding: 8px;
-    }
-
+    
     h2 {
-        font-size: 2rem;
-
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
     }
-
-    input {
-        width: 20rem;
-
+    
+    #question {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
-
-    h1 {
-        font-size: 2.4rem;
+    
+    #choices {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
     }
-
-    p {
-
-        font-size: 1.2rem;
-        line-height: 3rem;
-        margin-bottom: 3rem;
+    
+    #choices button {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ddd;
+      color: #333;
+      cursor: pointer;
     }
-
-    h2 {
-        font-size: 2.4rem;
-        margin-bottom: 6rem;
-        color: #fff
+    
+    #choices button:hover {
+      background-color: #ccc;
     }
-
-    input {
-        margin-bottom: 1rem;
-        width: 20rem;
-        padding: 1.5rem;
-        font-size: 1.5rem;
-        box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    
+    #submit {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #baae00;
+      color: #fff;
+      cursor: pointer;
     }
-
-    .nav-wrapper {
-        display: relative;
-        padding-top: 4rem;
+    
+    #submit:hover {
+      background-color: #a83e00;
     }
-}
-
-.quiz-over .box h1 {
-    font-size: 20px;
-}
-
-/*-- media query @ 1024-*/
-@media screen and (min-width: 1024px) {
-    input {
-        width: 30rem;
+    
+    #timer, #score {
+      font-size: 16px;
+      margin-bottom: 10px;
     }
-
-    .answers-tracker div {
-        height: 45px;
-        width: 45px;
+    
+    #timer span, #score span {
+      font-weight: bold;
     }
-
-    #home img {
-        width: 40%;
+    
+    #result {
+      font-size: 18px;
+      margin-top: 20px;
     }
-
-    h2 {
-        font-size: 2.2rem;
-        margin-bottom: 4rem;
-        color: #fff;
-    }
-
-    p {
-
-        font-size: 2.2rem;
-    }
-
-    #primary-nav {
-        margin-left: 240%;
-    }
-
-}
+    
