@@ -63,13 +63,19 @@ label {
 h2 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: black;
+  color: white;
   justify-self: center;
  }
+
 h1 {
   font-size: 22px;
-  color:black;
-  margin-left: 25%;
+  color: white;
+  justify-content: center;
+ 
+}
+.flex-center{
+  justify-content: center;
+  align-items: center;
 }
 
 hr { 
@@ -167,7 +173,7 @@ p{
  background-color: rgb(6, 126, 34);
  border-radius: 5px;
  font-size: 16px;
- /*--margin:15px 0 20px;*/
+
  color: rgb(231, 231, 231);
  background: linear-gradient(90deg, rgb( rgb(6, 126, 34))0%, rgba( rgb(6, 126, 34) 0.829)100%);
  cursor: pointer;

@@ -22,7 +22,7 @@ h1{
 h2{ 
    font-size: 2.7rem;
    margin-bottom: 4rem;
-   color: #fff
+   color: #fff;
 }
 h3{
    font-size: 2.2rem;
@@ -242,6 +242,7 @@ h2{
 
 h1{
    font-size: 2.1rem;
+   margin-left: 4%;
 }
 .logo img {
    width: 70%;
@@ -254,7 +255,7 @@ h1{
    
 }
 .margin-left {
-   /* margin-left: 1%; */
+   margin-left: 1%; 
 }
 
 .nav {
