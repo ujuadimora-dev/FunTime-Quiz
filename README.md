@@ -4,7 +4,7 @@
 . View the live site here
  [here]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 
-![Mockup](assets/doc/readme-images/mockup-site.png)
+![Mockup](assets/doc/readme-images/mock-ste.png)
 
 ## Features 
 

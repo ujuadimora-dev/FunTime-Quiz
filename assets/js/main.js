@@ -16,7 +16,7 @@ const questions = [
   {
       question:"Which of these countries is dead sea located?",
       choices:["between Israel and Syria", "between Israel and Jordan", "between Japan and  China", "between Nigeria and chad"],
-      answer: "between Israel and Syria"
+      answer: "between Israel and jordan"
   },
   {
       question:"How many teeth does an adult cat normally have?",
