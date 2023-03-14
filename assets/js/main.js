@@ -10,7 +10,7 @@ const result = document.getElementById ("result");
 /**
  * This is section is the array of 10 questions and answere for the quiz 
  */
-// Define quiz questions and answers
+
 const questions = [
     
   {
@@ -67,7 +67,9 @@ const questions = [
   },
 ]
   
- // Set the quiz timer to 60 seconds
+ /**
+ * Set the quiz timer to 60 seconds 
+ */ 
 const timeLimit = 60;
 let timeLeft = timeLimit;
 let timer;
@@ -125,7 +127,9 @@ function displayQuestion(index) {
   document.getElementById("choices").innerHTML = choicesHtml;
 }
 
-// Starts the quiz timer and updates the display every second
+/**
+ * Starts the quiz timer and updates the display every second 
+ */  
 function startTimer() {
   timer = setInterval(function() {
     timeLeft--;
@@ -141,7 +145,10 @@ function startTimer() {
 function endQuiz() {
   clearInterval(timer);
   
-  // Check if the score is good
+  /**
+ *  Check if the score is good
+ */  
+
   let resultHtml = "";
   if (score === questions.length) {
     resultHtml = "🤝 Great job!";
@@ -176,22 +183,14 @@ document.getElementById("play-again").addEventListener("click", function() {
   document.getElementById("points").textContent = score;
   document.getElementById("result").textContent = "";
 
-  // Show the submit button and hide the play again button
+  // Show the next button and hide the play again button
   document.getElementById("submit").style.display = "block";
   document.getElementById("play-again").style.display = "none";
 });
 
-
-  
-  /**
- * function to play the quiz again
- */
-function tryAgain(){
-  window.location.reload();
-}
 /**
-* function to jump to Home page
-*/
+ * function to jump to Home page
+ */
 function goHome(){
   window.location.href="index.html"
 }
@@ -202,3 +201,7 @@ function goHome(){
 function playQuiz(){
   window.location.href="quiz.html"
 }
+
+
+  
+  

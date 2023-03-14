@@ -22,40 +22,39 @@
 
     <!--Here the the main container for the quiz-->
     <div class="container-quiz1">
-        <header>
-            <!--Here is the markup for navbar and there are arial-label for ther screenreader-->
-            <nav>
-                <ul id="primary-nav">
-                    <li><a class="active" href="index.html" style="font-size: 2rem;"
-                            aria-label="Go to the Top for  the home page page">Home</a></li>
-                    <li><a href="contact.html" style="font-size: 2rem;"
-                            aria-label="Go to the Top of the contact page">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h1></h1>
-        <div id="question"></div>
-        <div id="timer">Time Remaining: <span id="time"></span></div>
+        <div id="top">
+            <header>
+                <!--Here is the markup for navbar and there are arial-label for ther screenreader-->
+                <nav>
+                    <ul id="primary-nav">
+                        <li><a class="active" href="index.html" style="font-size: 2rem;"
+                                aria-label="Go to the Top for  the home page page">Home</a></li>
+                        <li><a href="contact.html" style="font-size: 2rem;"
+                                aria-label="Go to the Top of the contact page">Contact</a></li><br>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <!--Here is the markup for  Quiz-->
 
+        <div id="timquest">
+            <hr style="height:2px;border-width:0;color:rgb(88, 79, 79);background-color:rgb(88, 79, 79);">
+            <h1>Test your knowledge of Science & Nature</h1><br>
+            <hr style="height:2px;border-width:0;color:gray;background-color:rgb(32, 160, 16)">
+
+            <div id="question"></div><br><br>
+            <div id="timer"><i class="fas fa-clock"></i> <span id="time"></span></div>
+        </div>
         <div id="choices"></div>
-        <button id="submit">Submit</button>
-        <div id="timer">Time Remaining: <span id="time"></span></div>
-        <div id="score">Score: <span id="points"></span></div>
-        <button id="play-again" style="display:none;">Play Again</button>
+        <div>
+            <button id="submit">Next</button>
+            <div id="score">Score: <span id="points"></span></div>
+        </div>
+        <hr>
+        <button id="play-again" style="display:none;" class="btn1">Play Again</button>
         <div id="result"></div>
-
-
-        <!--This on click event to replay the quiz- The function can be seen  Javascript page-->
-        <button type="button" onclick="tryAgain()" class="btn1">Play Again! </button><br>
-        <!--This on click event to jump to the home Page the quiz- The function can be seen  Javascript page-->
-        <button type="button" onclick="goHome()" class="btn1" aria-label=" click
-         k the button to  the home page">Go Home! </button>
-
     </div>
-
-
-
-
+    <script src="https://kit.fontawesome.com/72e64da51c.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
