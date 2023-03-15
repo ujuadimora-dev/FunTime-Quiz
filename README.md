@@ -96,7 +96,13 @@ Poor The result or score is when the user score between 0 and 4. As shown below
 ![Step 3 and 4](assets/doc/readme-images/sect2.jpg)
 
 
-![Step5](assets/doc/readme-images/sect5.PNG)
+![Step5](assets/doc/readme-images/secttion5.png)
+
+![Step5 continues](assets/doc/readme-images/secttion5cont.png)
+
+![Step5 continues](assets/doc/readme-images/secttion5continues.png)
+
+
 
 
 
@@ -130,8 +136,8 @@ Poor The result or score is when the user score between 0 and 4. As shown below
 ![contact page](assets/doc/readme-images/contdesin.PNG)
 <br><br>
 
-## contact Page
-![Quiz Section](assets/doc/readme-images/quiz-desgn.PNG)
+## Quiz Page Page
+![Quiz Section](assets/doc/readme-images/quiz.design.PNG)
 <br><br>
 
 
