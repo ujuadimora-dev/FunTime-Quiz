@@ -52,7 +52,7 @@ This page shows the contact form
 *	Contact form
 *	This contact form is implemented to allow users to contact 'FunTime-Quiz' 
 *	Username (is a must;  if the user did not put in his/her name, the system will complain that the name must be writing)
-*	Email (a must ;if the user did not put in his/her email and must contain(@), the system will complain that the email with (@) must be writing))
+*	Email (a must ;if the user did not put in his/her email and must contain(@), the system will complain that the email with (@) must be writing)
 * On successful submission of the contact form, the user will be navigated to Thank.html displaying Thank you message.
 
 
@@ -74,15 +74,21 @@ The  consists of ;
 3. The user must select option before going to another question
 
 
-![Quiz section](assets/doc/readme-images/quiz-sec.png)
+![Quiz section](assets/doc/readme-images/quiz-section.PNG)
 
-Great Result or score is when the user score above 5( that is >6). As shown in the image below
+Great Result or score is when the user score above 7( that equal  and greater than 8). As shown in the image below
 
-![Great score](assets/doc/readme-images/great-work.png)
+![Great score](assets/doc/readme-images/great-job.PNG)
 
-Poor The result or score is when the user score between 0 and 6. As shown below
+Great Result or score is when the user score above 4 ( that equal  and greater than 5 && 7). As shown in the image below
 
-![Poor score](assets/doc/readme-images/poor-mark.png)
+![Nice Work](assets/doc/readme-images/nice-work.PNG)
+
+
+Poor The result or score is when the user score between 0 and 4. As shown below
+
+![Poor score](assets/doc/readme-images/better-luck.PNG)
+
 
 ## The following steps below shows how the App works
 ![step 1 and 2](assets/doc/readme-images/sect1.jpg)

@@ -150,14 +150,13 @@ function endQuiz() {
  */  
 
   let resultHtml = "";
-  if (score === questions.length) {
+  if (score >= 8) {
     resultHtml = "🤝 Great job!";
-  } else if (score >= Math.floor(questions.length / 2)) {
+  } else if (score >= 5 && score <= 7) {
     resultHtml = "👍 Nice work!";
   } else {
-    resultHtml ="👎 Better luck next time!";
+    resultHtml = "👎 Better luck next time!";
   }
-  
   // Display the final score and result message
   document.getElementById("result").innerHTML = `You got ${score} out of ${questions.length} correct. ${resultHtml}`;
 
