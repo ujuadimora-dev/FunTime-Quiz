@@ -1,6 +1,6 @@
 # FunTime-Quiz
 
- Funtime- Quiz site is  an educational website- The user is test on on his/her knowledge on science and Nature. The site is user friendly and accesseble for screen reader.  It  has  5 sections; Home , contact, play, Quiz, score sections.
+ Funtime- Quiz site is  an educational website- The user is test on on his/her knowledge on science and Nature. The site is user friendly and accessible for screen reader.  It  has  four(4 )sections; Home , contact, play, Quiz  sections.
 . View the live site here
  [here]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 
@@ -80,7 +80,7 @@ Great Result or score is when the user score above 7( that equal  and greater th
 
 ![Great score](assets/doc/readme-images/great-job.PNG)
 
-Great Result or score is when the user score above 4 ( that equal  and greater than 5 && 7). As shown in the image below
+Average score  is when the user score above 4 ( that equal  and greater than 5 && 7). As shown in the image below
 
 ![Nice Work](assets/doc/readme-images/nice-work.PNG)
 
@@ -119,9 +119,9 @@ Poor The result or score is when the user score between 0 and 4. As shown below
 * 	As a future enhancement, the contact form will be updated with to send an email to “FunTime-Quiz 's email” and give the user notification information.
 *	There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'FunTime-Quiz'
 *	There should Google map showing the location of FunTime-Quiz company
-*   Timer  for the quiz will be implemented in the future
+*   Timer  for the quiz will be regulated in the future
 *	It should also in Future be a firm that is decated for Eductional quizzes for schools( both Primary and tericially institutions)
-
+*   All the answers to the  questions will be shown at the end of the quiz 
 ## Design
 
 ## Home Page
@@ -276,16 +276,16 @@ Each item opened a new tab when clicked as expected and correct hover color was 
 **Contact form**
 Testing was performed on the contact page . It will navigate the user to Thank-you.html , 
 
-## Scenario One - Correct Inputs_
+### Scenario One - Correct Inputs_
 
 Steps to test:
-## If the user inputs the user name and correct email with email format.
+### If the user inputs the user name and correct email with email format.
 Username: Ada
 Email; uju@gmail.com
 Submit;
 on clicking submit, It will navigate the user to Thank-you.html , 
 
-#  Scenario two - blank Inputs_
+### Scenario two - blank Inputs_
 
 Steps to test:
 But  if the user e.g;
@@ -294,7 +294,7 @@ Email; uju@gmail.com
 Submit;
 on clicking submit, there will a message telling the user that name filed must not be empty
 
-# Scenario One - in Correct email Inputs_
+### Scenario One - in Correct email Inputs_
 
 Steps to test:
 
@@ -304,7 +304,7 @@ Email; ujugmail.com
 Submit;
 on clicking submit, there will a message telling the user that email field must contain @ 
 
-# Actual:
+### Actual:
 Website behaved as expected
 
 ### Validator Testing 
@@ -377,9 +377,9 @@ The project will now of been cloned on your local machine for use.
 * (https://www.w3schools.com/)
     *  some of the code was used from this site to create form. Styles were changed to suit styling on my Website. I recommend this site for every beginners.
 
-   * https://stackoverflow.com]This site also help me in resovlving some issue in coding
+   * https://stackoverflow.comThis site also help me in resovlving some issue in coding
     
-* [Youtube Tutorial](https://youtu.be/2Bpiluefkh8),
+* [Youtube Tutorial](credit to https://www.youtube.com/watch?v=C7NsIRhoWuE&t=1094s),
     * I learn  lot from this video especially the  Javascript.
 
 

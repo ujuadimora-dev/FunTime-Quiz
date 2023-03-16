@@ -14,7 +14,7 @@ font-size: 62.5%;
 }
 
 
-/*-----NaV---*/
+/*-----NaV Syling--*/
 
 
 #top{
@@ -131,7 +131,7 @@ p{
   float: left;
   padding: 15px 50px;
   border:none;
-  background-color: rgb(6, 126, 34);
+  background-color: #15923b;
   border-radius: 5px;
   font-size: 16px;
   margin:15px 0 20px;
@@ -141,11 +141,11 @@ p{
  }
     
 #submit:hover {
-  background-color:  rgb(6, 126, 34);
+  background-color:  #15923b;
 }
     
 #timer, #score {
-  color:  rgb(6, 126, 34);
+  color:  #15923b;
   float: right;
   font-size: 26px;
   margin-bottom: 10px;
@@ -154,7 +154,7 @@ p{
     
 #timer span, #score span {
  font-weight: bold;
- color: rgb(180, 185, 180);
+ color:#a7b3ab;
  }
 
   #score span{

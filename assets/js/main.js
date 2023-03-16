@@ -1,6 +1,7 @@
 /**
  * This is section is the delaration of the variable used
  */
+// crete the Java essentials  by Code institue
 const question= document.getElementById("question");
 const choices = document.getElementById("choices");
 const time = document.getElementById("time");
@@ -74,6 +75,21 @@ const timeLimit = 60;
 let timeLeft = timeLimit;
 let timer;
 
+/**
+ * Starts the quiz timer and updates the display every second 
+ */  
+//credit to https://stackoverflow.com/questions/63775740/how-to-create-the-easiest-countdown-timer and https://www.youtube.com/watch?v=MLtAMg9_Svw&t=399s
+function startTimer() {
+  timer = setInterval(function() {
+  timeLeft--;
+  document.getElementById("time").textContent = timeLeft;
+    
+    if (timeLeft === 0) {
+      endQuiz();
+    }
+  }, 1000);
+}
+
 // Set the initial score to 0
 let score = 0;
 
@@ -85,6 +101,7 @@ displayQuestion(currentQuestion);
 startTimer();
 
 // When the user submits an answer
+// credit to https://stackoverflow.com/questions/62594459/how-to-check-the-correct-answer-javascript-4-buttons and https://simplestepscode.com/javascript-quiz-tutorial/
 document.getElementById("submit").addEventListener("click", function() {
   // Get the user's selected answer
   const userAnswer = document.querySelector('input[name="answer"]:checked');
@@ -111,7 +128,7 @@ document.getElementById("submit").addEventListener("click", function() {
     }
   }
 });
-
+// credit to https://simplestepscode.com/javascript-quiz-tutorial/ and // credit to https://www.youtube.com/watch?v=C7NsIRhoWuE&t=1094s
 // Displays a question and its answer choices
 function displayQuestion(index) {
   const question = questions[index];
@@ -126,21 +143,6 @@ function displayQuestion(index) {
   }
   document.getElementById("choices").innerHTML = choicesHtml;
 }
-
-/**
- * Starts the quiz timer and updates the display every second 
- */  
-function startTimer() {
-  timer = setInterval(function() {
-    timeLeft--;
-    document.getElementById("time").textContent = timeLeft;
-    
-    if (timeLeft === 0) {
-      endQuiz();
-    }
-  }, 1000);
-}
-
 // Ends the quiz and displays the final score
 function endQuiz() {
   clearInterval(timer);
@@ -177,7 +179,7 @@ document.getElementById("play-again").addEventListener("click", function() {
 
   // Start the quiz timer
   startTimer();
-
+// credit to https://www.youtube.com/watch?v=C7NsIRhoWuE&t=1094s
   // Update the score display and result message
   document.getElementById("points").textContent = score;
   document.getElementById("result").textContent = "";
