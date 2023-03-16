@@ -137,7 +137,7 @@ Poor The result or score is when the user score between 0 and 4. As shown below
 <br><br>
 
 ## Quiz Page Page
-![Quiz Section](assets/doc/readme-images/quiz.design.PNG)
+![Quiz Section](assets/doc/readme-images/quiz-design.PNG)
 <br><br>
 
 
@@ -218,7 +218,7 @@ Issue : After keyboard controls were implemented, while testing the site with wi
 
 ### Quiz Section
 
-![Quiz](assets/doc/test-images/quiz-leistung.PNG)
+![Quiz](assets/doc/test-images/litehaus-Quiz.PNG)
 
 ### Contact Page
 
